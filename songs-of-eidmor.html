@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Songs of Eiðmor — Selena Monroe</title>
+<meta name="description" content="Songs of Eiðmor: an upcoming sapphic dark romantasy series by Selena Monroe.">
+<meta property="og:title" content="Songs of Eiðmor — Selena Monroe">
+<meta property="og:image" content="https://selenamonroe.com/Website_Banner.png">
+<link rel="icon" type="image/png" href="Selena_Monroe_Logo_Transparent.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Cinzel:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root { --bg: #0D0B0F; --bg2: #131018; --text: #E7D6BE; --text-muted: #a08870; --gold: #B89A6A; --gold-light: #d4b887; --crimson: #7A1F2B; --border: rgba(184,154,106,0.2); --border-strong: rgba(184,154,106,0.45); }
+  html, body { height: 100%; }
+  body { background: var(--bg); color: var(--text); font-family: 'EB Garamond', Georgia, serif; font-size: 18px; line-height: 1.75; overflow-x: hidden; display: flex; flex-direction: column; }
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(13,11,15,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .nav-logo img { height: 38px; width: auto; }
+  .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+  .nav-links a { font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-muted); text-decoration: none; transition: color 0.25s; }
+  .nav-links a:hover, .nav-links a.active { color: var(--gold-light); }
+  .nav-links li { position: relative; }
+  .nav-has-dropdown > a::after { content: ' ▾'; font-size: 8px; opacity: 0.6; }
+  .nav-dropdown { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background: rgba(13,11,15,0.98); border: 1px solid var(--border); min-width: 200px; padding: 0.75rem 0; z-index: 200; margin-top: -1px; }
+  .nav-links li:hover .nav-dropdown { display: block; }
+  .nav-has-dropdown::after { content: ''; position: absolute; top: 100%; left: 0; right: 0; height: 12px; }
+  .nav-dropdown a { display: block; padding: 0.5rem 1.25rem; font-family: 'Cinzel', serif; font-size: 10px; letter-spacing: 0.15em; color: var(--text-muted); text-decoration: none; text-transform: uppercase; white-space: nowrap; transition: color 0.2s, background 0.2s; }
+  .nav-dropdown a:hover, .nav-dropdown a.active { color: var(--gold-light); background: rgba(184,154,106,0.06); }
+  .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 4px; flex-direction: column; gap: 5px; }
+  .nav-toggle span { display: block; width: 24px; height: 1px; background: var(--gold); }
+  .page-wrap { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 8rem 2rem 4rem; text-align: center; }
+  .eyebrow { font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 0.4em; text-transform: uppercase; color: var(--crimson); margin-bottom: 1.25rem; display: flex; align-items: center; justify-content: center; gap: 1rem; }
+  .eyebrow::before, .eyebrow::after { content: ''; width: 30px; height: 1px; background: var(--crimson); opacity: 0.5; }
+  h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.5rem, 7vw, 5rem); font-weight: 300; color: var(--gold-light); line-height: 1.1; margin-bottom: 1.5rem; letter-spacing: 0.04em; }
+  .subtitle { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: clamp(1.1rem, 2.5vw, 1.4rem); color: var(--text-muted); max-width: 520px; margin: 0 auto 1rem; line-height: 1.75; }
+  .first-book { font-family: 'Cinzel', serif; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 3rem; }
+  .first-book span { color: var(--text-muted); }
+  .divider { display: flex; align-items: center; gap: 1rem; justify-content: center; margin: 2rem 0; }
+  .divider::before, .divider::after { content: ''; width: 60px; height: 1px; background: var(--border-strong); }
+  .diamond { width: 6px; height: 6px; background: var(--gold); transform: rotate(45deg); }
+  .coming-soon-box { border: 1px solid var(--border); padding: 3rem 2.5rem; max-width: 480px; margin: 0 auto 2rem; background: var(--bg2); }
+  .coming-soon-box p { font-style: italic; color: var(--text-muted); font-size: 1.05rem; line-height: 1.75; margin-bottom: 1.5rem; }
+  .btn { font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; padding: 0.75rem 2rem; text-decoration: none; border: 1px solid var(--gold); color: var(--gold-light); background: transparent; cursor: pointer; transition: all 0.3s; display: inline-block; }
+  .btn:hover { background: var(--gold); color: var(--bg); }
+  .back-link { font-family: 'Cinzel', serif; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-muted); text-decoration: none; display: inline-block; margin-top: 0.5rem; transition: color 0.2s; }
+  .back-link:hover { color: var(--gold); }
+  footer { border-top: 1px solid var(--border); padding: 2.5rem 2rem; text-align: center; background: var(--bg); }
+  .footer-logo { height: 52px; width: auto; margin-bottom: 1.25rem; opacity: 0.7; }
+  .footer-copy { font-size: 0.82rem; color: var(--text-muted); opacity: 0.65; line-height: 1.6; }
+  .footer-copy a { color: var(--gold); text-decoration: none; }
+  @media (max-width: 480px) {
+    nav { padding: 0 1.25rem; }
+    .nav-links { display: none; flex-direction: column; position: absolute; top: 64px; left: 0; right: 0; background: rgba(13,11,15,0.98); border-bottom: 1px solid var(--border); padding: 1.5rem 2rem; gap: 1.25rem; z-index: 200; }
+    .nav-links.open { display: flex; }
+    .nav-toggle { display: flex; }
+    .nav-dropdown { display: none; position: static; transform: none; background: rgba(255,255,255,0.04); border: none; border-left: 2px solid var(--border-strong); padding: 0.5rem 0 0.5rem 1rem; margin-top: 0.25rem; min-width: unset; width: 100%; }
+    .nav-dropdown a { padding: 0.4rem 0; font-size: 10px; }
+    .nav-has-dropdown::after { display: none; }
+    .coming-soon-box { padding: 2rem 1.25rem; }
+  }
+
+  /* COOKIE BANNER */
+  .cookie-banner {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    z-index: 999;
+    background: var(--bg2);
+    border-top: 1px solid var(--border-strong);
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-family: 'EB Garamond', serif;
+  }
+  .cookie-banner a { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
+  .cookie-btn {
+    font-family: 'Cinzel', serif;
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    background: transparent;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    padding: 0.4rem 1.25rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .cookie-btn:hover { background: var(--gold); color: var(--bg); }
+  @media (max-width: 480px) {
+    .cookie-banner { padding: 1rem 1.25rem; flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- COOKIE NOTICE -->
+<div class="cookie-banner" id="cookieBanner">
+  <p>This site uses third-party services (EmailOctopus, Formspree, Google Fonts) that may process limited personal data. By continuing to use this site you acknowledge our <a href="privacy.html">Privacy Policy</a>.</p>
+  <button onclick="dismissCookie()" class="cookie-btn">Got it</button>
+</div>
+<nav>
+  <a class="nav-logo" href="index.html"><img src="Selena_Monroe_Logo_Transparent.png" alt="Selena Monroe"></a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+  <ul class="nav-links" id="navLinks">
+    <li class="nav-has-dropdown">
+      <a href="index.html#books" class="active">Books</a>
+      <div class="nav-dropdown">
+        <a href="monstrous-beloved.html">The Monstrous Beloved</a>
+        <a href="ashen-hearth.html">The Ashen Hearth</a>
+        <a href="songs-of-eidmor.html" class="active">Songs of Eiðmor</a>
+        <a href="reading-order.html">Full Reading Order</a>
+      </div>
+    </li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#newsletter">Newsletter</a></li>
+    <li><a href="press.html">Press</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+</nav>
+<div class="page-wrap">
+  <p class="eyebrow">Selena Monroe</p>
+  <h1>Songs of Eiðmor</h1>
+  <p class="subtitle">Every oath leaves a mark. The first book is coming.</p>
+  <p class="first-book"><span>First Book — </span>What the Oath Heard</p>
+  <div class="divider"><div class="diamond"></div></div>
+  <div class="coming-soon-box">
+    <p>This series is currently in development. Join the newsletter to be the first to know about cover reveals, release dates, and everything else coming out of the dark.</p>
+    <a href="index.html#newsletter" class="btn">Join the Newsletter</a>
+  </div>
+  <a href="monstrous-beloved.html" class="back-link">← Start with The Monstrous Beloved</a>
+</div>
+<footer>
+  <img src="Selena_Monroe_Logo_Transparent.png" alt="Selena Monroe" class="footer-logo">
+  <p class="footer-copy">&copy; 2026 Selena Monroe. Published in partnership with <a href="https://mythcodepress.com" target="_blank" rel="noopener">Mythcode Press</a>. · <a href="content-notes.html">Content Notes</a> · <a href="privacy.html">Privacy Policy</a><br><span style="font-size:0.78rem;opacity:0.6;">All content intended for readers 18+.</span></p>
+</footer>
+<script>
+  document.getElementById('navToggle').addEventListener('click', function() {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+  var dp = document.querySelector('.nav-has-dropdown');
+  if (dp) {
+    var dt = dp.querySelector('a'), dd = dp.querySelector('.nav-dropdown');
+    dt.addEventListener('click', function(e) {
+      if (window.innerWidth <= 480) { e.preventDefault(); dd.style.display = dd.style.display === 'block' ? 'none' : 'block'; }
+    });
+    document.addEventListener('click', function(e) { if (!dp.contains(e.target)) dd.style.display = ''; });
+  }
+
+  // Cookie banner
+  function dismissCookie() {
+    document.getElementById('cookieBanner').style.display = 'none';
+    var d = new Date();
+    d.setFullYear(d.getFullYear() + 1);
+    document.cookie = 'cookieNotice=1; expires=' + d.toUTCString() + '; path=/; SameSite=Lax';
+  }
+  function getCookie(name) {
+    var match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+    return match ? match[2] : null;
+  }
+  if (getCookie('cookieNotice')) {
+    var cb = document.getElementById('cookieBanner');
+    if (cb) cb.style.display = 'none';
+  }
+</script>
+</body>
+</html>

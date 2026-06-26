@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Press & Media Kit — Selena Monroe</title>
+<meta name="description" content="Press kit for author Selena Monroe. Bio, series information, cover images, and contact details for media and collaboration inquiries.">
+<meta property="og:title" content="Press & Media Kit — Selena Monroe">
+<meta property="og:image" content="https://selenamonroe.com/Website_Banner.png">
+<link rel="icon" type="image/png" href="Selena_Monroe_Logo_Transparent.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Cinzel:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #0D0B0F; --bg2: #131018; --bg3: #1a1520;
+    --text: #E7D6BE; --text-muted: #a08870;
+    --gold: #B89A6A; --gold-light: #d4b887;
+    --crimson: #7A1F2B;
+    --border: rgba(184,154,106,0.2); --border-strong: rgba(184,154,106,0.45);
+  }
+  html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+  body { background: var(--bg); color: var(--text); font-family: 'EB Garamond', Georgia, serif; font-size: 18px; line-height: 1.75; overflow-x: hidden; }
+
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(13,11,15,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .nav-logo img { height: 38px; width: auto; }
+  .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+  .nav-links a { font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-muted); text-decoration: none; transition: color 0.25s; }
+  .nav-links a:hover, .nav-links a.active { color: var(--gold-light); }
+  .nav-links li { position: relative; }
+  .nav-has-dropdown > a::after { content: ' ▾'; font-size: 8px; opacity: 0.6; }
+  .nav-dropdown { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background: rgba(13,11,15,0.98); border: 1px solid var(--border); min-width: 200px; padding: 0.75rem 0; z-index: 200; margin-top: -1px; }
+  .nav-links li:hover .nav-dropdown { display: block; }
+  .nav-has-dropdown::after { content: ''; position: absolute; top: 100%; left: 0; right: 0; height: 12px; }
+  .nav-dropdown a { display: block; padding: 0.5rem 1.25rem; font-family: 'Cinzel', serif; font-size: 10px; letter-spacing: 0.15em; color: var(--text-muted); text-decoration: none; text-transform: uppercase; white-space: nowrap; transition: color 0.2s, background 0.2s; }
+  .nav-dropdown a:hover, .nav-dropdown a.active { color: var(--gold-light); background: rgba(184,154,106,0.06); }
+  .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 4px; flex-direction: column; gap: 5px; }
+  .nav-toggle span { display: block; width: 24px; height: 1px; background: var(--gold); }
+
+  .page-header { padding: 9rem 2rem 4rem; text-align: center; max-width: 700px; margin: 0 auto; }
+  .section-label { font-family: 'Cinzel', serif; font-size: 10px; letter-spacing: 0.35em; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 0.75rem; }
+  .page-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 400; color: var(--gold-light); margin-bottom: 1rem; }
+  .page-intro { font-style: italic; color: var(--text-muted); font-size: 1.05rem; line-height: 1.75; }
+
+  .press-section { max-width: 1000px; margin: 0 auto; padding: 4rem 2rem; border-top: 1px solid var(--border); }
+  .press-section-title { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 400; color: var(--gold-light); margin-bottom: 0.5rem; }
+  .ornament { display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem; }
+  .ornament::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+  .ornament-diamond { width: 6px; height: 6px; background: var(--gold); transform: rotate(45deg); flex-shrink: 0; }
+
+  .bio-grid { display: grid; grid-template-columns: 220px 1fr; gap: 3rem; align-items: start; }
+  .bio-photo { width: 100%; aspect-ratio: 1; object-fit: cover; object-position: center top; border: 1px solid var(--border-strong); filter: sepia(0.1) contrast(1.05); display: block; }
+  .bio-text p { margin-bottom: 1rem; line-height: 1.8; }
+
+  .copy-block { background: var(--bg3); border: 1px solid var(--border); padding: 1.25rem 1.5rem; margin-top: 1.5rem; }
+  .copy-block-label { font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem; display: block; }
+  .copy-block p { font-size: 0.95rem; line-height: 1.7; color: var(--text-muted); }
+  .copy-btn { font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; background: none; border: 1px solid var(--border-strong); color: var(--text-muted); padding: 0.35rem 0.85rem; cursor: pointer; transition: all 0.2s; margin-top: 0.75rem; display: inline-block; }
+  .copy-btn:hover { border-color: var(--gold); color: var(--gold); }
+
+  .covers-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 1.5rem; }
+  .cover-item { display: flex; flex-direction: column; gap: 0.5rem; }
+  .cover-item img { width: 100%; aspect-ratio: 2/3; object-fit: cover; border: 1px solid var(--border); display: block; }
+  .cover-item-title { font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 0.12em; color: var(--text-muted); text-transform: uppercase; text-align: center; line-height: 1.4; }
+
+  .facts-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.5rem; }
+  .fact-card { background: var(--bg3); border: 1px solid var(--border); padding: 1.25rem 1.5rem; }
+  .fact-label { font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.4rem; display: block; }
+  .fact-value { font-size: 1rem; color: var(--text); line-height: 1.5; }
+
+  .social-list { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+  .social-list a { font-family: 'Cinzel', serif; font-size: 10px; letter-spacing: 0.18em; color: var(--gold); text-decoration: none; text-transform: uppercase; display: flex; align-items: center; gap: 0.5rem; transition: color 0.2s; }
+  .social-list a::before { content: '◆'; font-size: 6px; color: var(--crimson); }
+  .social-list a:hover { color: var(--gold-light); }
+
+  .bio-section, .series-section { background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 4rem 2rem; }
+  .bio-section > div, .series-section > div { max-width: 1000px; margin: 0 auto; }
+  .contact-cta p { font-style: italic; color: var(--text-muted); margin-bottom: 1.5rem; line-height: 1.7; }
+  .btn { font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; padding: 0.75rem 2rem; text-decoration: none; border: 1px solid var(--gold); color: var(--gold-light); background: transparent; cursor: pointer; transition: all 0.3s; display: inline-block; }
+  .btn:hover { background: var(--gold); color: var(--bg); }
+
+  footer { border-top: 1px solid var(--border); padding: 2.5rem 2rem; text-align: center; background: var(--bg); }
+  .footer-logo { height: 52px; width: auto; margin-bottom: 1.25rem; opacity: 0.7; }
+  .footer-copy { font-size: 0.82rem; color: var(--text-muted); opacity: 0.65; line-height: 1.6; }
+  .footer-copy a { color: var(--gold); text-decoration: none; }
+
+  @media (max-width: 700px) {
+    .bio-grid { grid-template-columns: 1fr; }
+    .bio-photo { max-width: 200px; }
+    .covers-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 480px) {
+    nav { padding: 0 1.25rem; }
+    .nav-links { display: none; flex-direction: column; position: absolute; top: 64px; left: 0; right: 0; background: rgba(13,11,15,0.98); border-bottom: 1px solid var(--border); padding: 1.5rem 2rem; gap: 1.25rem; z-index: 200; }
+    .nav-links.open { display: flex; }
+    .nav-toggle { display: flex; }
+    .nav-dropdown { display: none; position: static; transform: none; background: rgba(255,255,255,0.04); border: none; border-left: 2px solid var(--border-strong); padding: 0.5rem 0 0.5rem 1rem; margin-top: 0.25rem; min-width: unset; width: 100%; }
+    .nav-dropdown a { padding: 0.4rem 0; font-size: 10px; }
+    .nav-has-dropdown::after { display: none; }
+    .page-header { padding: 7rem 1.25rem 3rem; }
+    .press-section { padding: 3rem 1.25rem; }
+    .facts-grid { grid-template-columns: 1fr; }
+    .covers-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+    .bio-section, .series-section { padding: 3rem 1.25rem; }
+    .social-contact-grid { grid-template-columns: 1fr !important; }
+    div[style*="grid-template-columns:1fr 1fr"] { display: block !important; }
+    div[style*="grid-template-columns:1fr 1fr"] > * { margin-bottom: 2rem; }
+  }
+
+  /* COOKIE BANNER */
+  .cookie-banner {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    z-index: 999;
+    background: var(--bg2);
+    border-top: 1px solid var(--border-strong);
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-family: 'EB Garamond', serif;
+  }
+  .cookie-banner a { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
+  .cookie-btn {
+    font-family: 'Cinzel', serif;
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    background: transparent;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    padding: 0.4rem 1.25rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .cookie-btn:hover { background: var(--gold); color: var(--bg); }
+  @media (max-width: 480px) {
+    .cookie-banner { padding: 1rem 1.25rem; flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- COOKIE NOTICE -->
+<div class="cookie-banner" id="cookieBanner">
+  <p>This site uses third-party services (EmailOctopus, Formspree, Google Fonts) that may process limited personal data. By continuing to use this site you acknowledge our <a href="privacy.html">Privacy Policy</a>.</p>
+  <button onclick="dismissCookie()" class="cookie-btn">Got it</button>
+</div>
+
+<nav>
+  <a class="nav-logo" href="index.html"><img src="Selena_Monroe_Logo_Transparent.png" alt="Selena Monroe"></a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+  <ul class="nav-links" id="navLinks">
+    <li class="nav-has-dropdown">
+      <a href="index.html#books">Books</a>
+      <div class="nav-dropdown">
+        <a href="monstrous-beloved.html">The Monstrous Beloved</a>
+        <a href="ashen-hearth.html">The Ashen Hearth</a>
+        <a href="songs-of-eidmor.html">Songs of Eiðmor</a>
+        <a href="reading-order.html">Full Reading Order</a>
+      </div>
+    </li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#newsletter">Newsletter</a></li>
+    <li><a href="press.html" class="active">Press</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page-header">
+  <span class="section-label">Media &amp; Press</span>
+  <h1 class="page-title">Press Kit</h1>
+  <p class="page-intro">Bio, cover images, series information, and contact details for media inquiries, BookTok features, and collaboration. For rights and publishing inquiries, please contact Mythcode Press directly.</p>
+</div>
+
+<div class="press-section">
+  <h2 class="press-section-title">At a Glance</h2>
+  <div class="ornament"><div class="ornament-diamond"></div></div>
+  <div class="facts-grid">
+    <div class="fact-card"><span class="fact-label">Genre</span><p class="fact-value">Sapphic Dark Romantasy · 18+</p></div>
+    <div class="fact-card"><span class="fact-label">Publisher</span><p class="fact-value"><a href="https://mythcodepress.com" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:none;">Mythcode Press</a></p></div>
+    <div class="fact-card"><span class="fact-label">Active Series</span><p class="fact-value">The Monstrous Beloved (6 books)</p></div>
+    <div class="fact-card"><span class="fact-label">Upcoming Series</span><p class="fact-value">The Ashen Hearth · Songs of Eiðmor</p></div>
+    <div class="fact-card"><span class="fact-label">Available On</span><p class="fact-value">Amazon · Kindle Unlimited</p></div>
+    <div class="fact-card"><span class="fact-label">Setting</span><p class="fact-value">Varied — each series has its own distinct world and mythology</p></div>
+  </div>
+</div>
+
+<div class="bio-section">
+  <div>
+    <h2 class="press-section-title">Author Bio</h2>
+    <div class="ornament"><div class="ornament-diamond"></div></div>
+    <div class="bio-grid">
+      <img src="Selena_Monroe_Profile_Pic.png" alt="Selena Monroe author photo" class="bio-photo">
+      <div class="bio-text">
+        <p>Selena Monroe writes dark fantasy romance filled with dangerous longing, monstrous devotion, and women who survive each other anyway. Her stories unfold across storm-haunted coastlines and candlelit ruins, where the most terrifying thing is never the creature in the dark — it's how much you want her to stay.</p>
+        <p>Her debut series, <em>The Monstrous Beloved</em>, follows six sapphic romances between mortal women and the ancient, hungry things that fall for them against every instinct. Expect emotional ruin, sharp intimacy, and stories that linger long after the final page.</p>
+        <p>All books are published in partnership with Mythcode Press and are intended for readers 18+.</p>
+        <div class="copy-block">
+          <span class="copy-block-label">Short Bio (for features &amp; interviews)</span>
+          <p id="shortBio">Selena Monroe writes sapphic dark romantasy about dangerous longing, monstrous devotion, and women who refuse to be anything less than the whole of themselves. She is the author of The Monstrous Beloved series, published in partnership with Mythcode Press.</p>
+          <button class="copy-btn" onclick="copyText('shortBio', this)">Copy Text</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="press-section">
+  <h2 class="press-section-title">Cover Images</h2>
+  <div class="ornament"><div class="ornament-diamond"></div></div>
+  <p style="color:var(--text-muted);font-style:italic;margin-bottom:2rem;font-size:1rem;">Cover art may be used for editorial, review, and promotional purposes. Please credit Selena Monroe / Mythcode Press.</p>
+  <div class="covers-grid">
+    <div class="cover-item"><img src="The_Binding_Night.png" alt="The Binding Night cover"><p class="cover-item-title">The Binding Night<br>Book One</p></div>
+    <div class="cover-item"><img src="The_Tide_Keeps_KU_v3.jpg" alt="The Tide Keeps cover"><p class="cover-item-title">The Tide Keeps<br>Book Two</p></div>
+    <div class="cover-item"><img src="Night_s_Own_KU_Cover.png" alt="Night's Own cover"><p class="cover-item-title">Night's Own<br>Book Three</p></div>
+    <div class="cover-item"><img src="the_vast_and_particular_ku_cover.png" alt="The Vast and Particular cover"><p class="cover-item-title">The Vast and Particular<br>Book Four</p></div>
+  </div>
+</div>
+
+<div class="series-section">
+  <div>
+    <h2 class="press-section-title">Series Summary</h2>
+    <div class="ornament"><div class="ornament-diamond"></div></div>
+    <div class="copy-block">
+      <span class="copy-block-label">The Monstrous Beloved — Series Description</span>
+      <p id="seriesDesc">A six-book sapphic dark romantasy series following mortal women and the ancient, hungry things that fall for them against every instinct. Each book is a standalone romance with a guaranteed happy ending — a different creature, a different world, the same consuming darkness. Expect dangerous longing, sharp intimacy, and monsters who are utterly undone by the women they were never supposed to want. For readers 18+. Published in partnership with Mythcode Press.</p>
+      <button class="copy-btn" onclick="copyText('seriesDesc', this)">Copy Text</button>
+    </div>
+  </div>
+</div>
+
+<div class="press-section">
+  <h2 class="press-section-title">Find Selena Online</h2>
+  <div class="ornament"><div class="ornament-diamond"></div></div>
+  <div class="social-contact-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;">
+    <ul class="social-list">
+      <li><a href="https://www.instagram.com/selena.monroe.books/" target="_blank" rel="noopener">Instagram — @selena.monroe.books</a></li>
+      <li><a href="https://www.threads.com/@selena.monroe.books" target="_blank" rel="noopener">Threads — @selena.monroe.books</a></li>
+      <li><a href="https://bsky.app/profile/selenamonroe.bsky.social" target="_blank" rel="noopener">Bluesky — selenamonroe.bsky.social</a></li>
+      <li><a href="https://mythcodepress.com" target="_blank" rel="noopener">Publisher — Mythcode Press</a></li>
+    </ul>
+    <div class="contact-cta">
+      <span class="section-label">Get in Touch</span>
+      <p>For review copies, interview requests, BookTok features, or other media inquiries, use the contact form or reach out directly on social.</p>
+      <a href="index.html#contact" class="btn">Send a Message</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <img src="Selena_Monroe_Logo_Transparent.png" alt="Selena Monroe" class="footer-logo">
+  <p class="footer-copy">&copy; 2026 Selena Monroe. Published in partnership with <a href="https://mythcodepress.com" target="_blank" rel="noopener">Mythcode Press</a>. · <a href="content-notes.html">Content Notes</a> · <a href="privacy.html">Privacy Policy</a><br><span style="font-size:0.78rem;opacity:0.6;">All content intended for readers 18+.</span></p>
+</footer>
+
+<script>
+  function copyText(id, btn) {
+    var el = document.getElementById(id);
+    navigator.clipboard.writeText(el.innerText).then(function() {
+      btn.textContent = 'Copied ✓';
+      setTimeout(function() { btn.textContent = 'Copy Text'; }, 2000);
+    });
+  }
+  document.getElementById('navToggle').addEventListener('click', function() {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+  var dp = document.querySelector('.nav-has-dropdown');
+  if (dp) {
+    var dt = dp.querySelector('a'), dd = dp.querySelector('.nav-dropdown');
+    dt.addEventListener('click', function(e) {
+      if (window.innerWidth <= 480) { e.preventDefault(); dd.style.display = dd.style.display === 'block' ? 'none' : 'block'; }
+    });
+    document.addEventListener('click', function(e) { if (!dp.contains(e.target)) dd.style.display = ''; });
+  }
+
+  // Cookie banner
+  function dismissCookie() {
+    document.getElementById('cookieBanner').style.display = 'none';
+    var d = new Date();
+    d.setFullYear(d.getFullYear() + 1);
+    document.cookie = 'cookieNotice=1; expires=' + d.toUTCString() + '; path=/; SameSite=Lax';
+  }
+  function getCookie(name) {
+    var match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+    return match ? match[2] : null;
+  }
+  if (getCookie('cookieNotice')) {
+    var cb = document.getElementById('cookieBanner');
+    if (cb) cb.style.display = 'none';
+  }
+</script>
+</body>
+</html>

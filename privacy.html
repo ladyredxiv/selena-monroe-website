@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Selena Monroe</title>
+<meta name="description" content="Privacy policy for selenamonroe.com — how we collect, use, and protect your data.">
+<link rel="icon" type="image/png" href="Selena_Monroe_Logo_Transparent.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Cinzel:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #0D0B0F; --bg2: #131018;
+    --text: #E7D6BE; --text-muted: #a08870;
+    --gold: #B89A6A; --gold-light: #d4b887;
+    --crimson: #7A1F2B;
+    --border: rgba(184,154,106,0.2); --border-strong: rgba(184,154,106,0.45);
+  }
+  html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+  body { background: var(--bg); color: var(--text); font-family: 'EB Garamond', Georgia, serif; font-size: 18px; line-height: 1.75; overflow-x: hidden; }
+
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(13,11,15,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .nav-logo img { height: 38px; width: auto; }
+  .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+  .nav-links a { font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-muted); text-decoration: none; transition: color 0.25s; }
+  .nav-links a:hover { color: var(--gold-light); }
+  .nav-links li { position: relative; }
+  .nav-has-dropdown > a::after { content: ' ▾'; font-size: 8px; opacity: 0.6; }
+  .nav-dropdown { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background: rgba(13,11,15,0.98); border: 1px solid var(--border); min-width: 200px; padding: 0.75rem 0; z-index: 200; margin-top: -1px; }
+  .nav-links li:hover .nav-dropdown { display: block; }
+  .nav-has-dropdown::after { content: ''; position: absolute; top: 100%; left: 0; right: 0; height: 12px; }
+  .nav-dropdown a { display: block; padding: 0.5rem 1.25rem; font-family: 'Cinzel', serif; font-size: 10px; letter-spacing: 0.15em; color: var(--text-muted); text-decoration: none; text-transform: uppercase; white-space: nowrap; transition: color 0.2s, background 0.2s; }
+  .nav-dropdown a:hover { color: var(--gold-light); background: rgba(184,154,106,0.06); }
+  .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 4px; flex-direction: column; gap: 5px; }
+  .nav-toggle span { display: block; width: 24px; height: 1px; background: var(--gold); }
+
+  .page-wrap { max-width: 720px; margin: 0 auto; padding: 9rem 2rem 6rem; }
+  .section-label { font-family: 'Cinzel', serif; font-size: 10px; letter-spacing: 0.35em; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 0.75rem; }
+  h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 5vw, 3rem); font-weight: 400; color: var(--gold-light); margin-bottom: 0.5rem; }
+  .last-updated { font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 3rem; display: block; }
+
+  .policy-section { margin-bottom: 2.5rem; padding-bottom: 2.5rem; border-bottom: 1px solid var(--border); }
+  .policy-section:last-child { border-bottom: none; }
+  h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 500; color: var(--gold-light); margin-bottom: 0.75rem; }
+  p { margin-bottom: 1rem; color: var(--text-muted); line-height: 1.8; }
+  p:last-child { margin-bottom: 0; }
+  a { color: var(--gold); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  ul { margin: 0.75rem 0 1rem 1.5rem; color: var(--text-muted); line-height: 1.8; }
+  ul li { margin-bottom: 0.3rem; }
+
+  footer { border-top: 1px solid var(--border); padding: 2.5rem 2rem; text-align: center; background: var(--bg); }
+  .footer-logo { height: 52px; width: auto; margin-bottom: 1.25rem; opacity: 0.7; }
+  .footer-copy { font-size: 0.82rem; color: var(--text-muted); opacity: 0.65; line-height: 1.6; }
+  .footer-copy a { color: var(--gold); text-decoration: none; }
+
+  @media (max-width: 480px) {
+    nav { padding: 0 1.25rem; }
+    .nav-links { display: none; flex-direction: column; position: absolute; top: 64px; left: 0; right: 0; background: rgba(13,11,15,0.98); border-bottom: 1px solid var(--border); padding: 1.5rem 2rem; gap: 1.25rem; z-index: 200; }
+    .nav-links.open { display: flex; }
+    .nav-toggle { display: flex; }
+    .nav-dropdown { display: none; position: static; transform: none; background: rgba(255,255,255,0.04); border: none; border-left: 2px solid var(--border-strong); padding: 0.5rem 0 0.5rem 1rem; margin-top: 0.25rem; min-width: unset; width: 100%; }
+    .nav-dropdown a { padding: 0.4rem 0; font-size: 10px; }
+    .nav-has-dropdown::after { display: none; }
+    .page-wrap { padding: 7rem 1.25rem 4rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html"><img src="Selena_Monroe_Logo_Transparent.png" alt="Selena Monroe"></a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+  <ul class="nav-links" id="navLinks">
+    <li class="nav-has-dropdown">
+      <a href="index.html#books">Books</a>
+      <div class="nav-dropdown">
+        <a href="monstrous-beloved.html">The Monstrous Beloved</a>
+        <a href="ashen-hearth.html">The Ashen Hearth</a>
+        <a href="songs-of-eidmor.html">Songs of Eiðmor</a>
+        <a href="reading-order.html">Full Reading Order</a>
+      </div>
+    </li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#newsletter">Newsletter</a></li>
+    <li><a href="press.html">Press</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page-wrap">
+  <span class="section-label">Legal</span>
+  <h1>Privacy Policy</h1>
+  <span class="last-updated">Last updated: June 2026</span>
+
+  <div class="policy-section">
+    <h2>Who we are</h2>
+    <p>This website is operated by Selena Monroe, author, in partnership with <a href="https://mythcodepress.com" target="_blank" rel="noopener">Mythcode Press</a>. When we say "we" or "this site" in this policy, we mean selenamonroe.com.</p>
+    <p>We take your privacy seriously and collect only what we need to operate this site and communicate with you.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>What data we collect and why</h2>
+    <p><strong style="color:var(--text);">Newsletter signups (EmailOctopus)</strong><br>
+    If you subscribe to the newsletter via the "Join the Coven" form, we collect your email address and any optional name you provide. This data is stored and processed by <a href="https://emailoctopus.com/legal/privacy" target="_blank" rel="noopener">EmailOctopus</a>. We use it solely to send you newsletters, release announcements, and author updates. You can unsubscribe at any time via the link in any email we send.</p>
+
+    <p><strong style="color:var(--text);">Contact form (Formspree)</strong><br>
+    If you use the contact form, we collect your name, email address, and message. This data is processed by <a href="https://formspree.io/legal/privacy-policy" target="_blank" rel="noopener">Formspree</a> and delivered to us by email. We use it only to respond to your message and do not store it beyond that purpose.</p>
+
+    <p><strong style="color:var(--text);">Google Fonts</strong><br>
+    This site loads fonts from Google Fonts. When you visit, your browser makes a request to Google's servers, which may log your IP address. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's privacy policy</a> for details.</p>
+
+    <p><strong style="color:var(--text);">Hosting (Namecheap)</strong><br>
+    This site is hosted by Namecheap, which may collect standard server logs including IP addresses and browser information as part of normal hosting operations. See <a href="https://www.namecheap.com/legal/general/privacy-policy/" target="_blank" rel="noopener">Namecheap's privacy policy</a>.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>What we don't do</h2>
+    <ul>
+      <li>We do not run advertising or tracking scripts on this site</li>
+      <li>We do not sell, rent, or share your personal data with third parties for marketing purposes</li>
+      <li>We do not use cookies beyond what is strictly necessary for the site to function</li>
+      <li>We do not use Google Analytics or any other analytics platform</li>
+    </ul>
+  </div>
+
+  <div class="policy-section">
+    <h2>Your rights (GDPR)</h2>
+    <p>If you are located in the European Economic Area, you have the following rights regarding your personal data:</p>
+    <ul>
+      <li><strong style="color:var(--text);">Access</strong> — you can request a copy of any data we hold about you</li>
+      <li><strong style="color:var(--text);">Correction</strong> — you can ask us to correct inaccurate data</li>
+      <li><strong style="color:var(--text);">Deletion</strong> — you can ask us to delete your data</li>
+      <li><strong style="color:var(--text);">Objection</strong> — you can object to how we process your data</li>
+      <li><strong style="color:var(--text);">Withdrawal of consent</strong> — if you've subscribed to the newsletter, you can unsubscribe at any time</li>
+    </ul>
+    <p>To exercise any of these rights, contact us via the <a href="index.html#contact">contact form</a>.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>Data retention</h2>
+    <p>Newsletter subscriber data is retained until you unsubscribe. Contact form submissions are retained only as long as needed to respond to your enquiry. We do not keep records of contact form submissions beyond that.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>Third-party links</h2>
+    <p>This site links to Amazon, Instagram, Threads, Bluesky, and Mythcode Press. We are not responsible for the privacy practices of those sites. We encourage you to review their privacy policies.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>Changes to this policy</h2>
+    <p>We may update this policy from time to time. The date at the top of this page reflects when it was last revised. Continued use of this site after changes constitutes acceptance of the updated policy.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>Contact</h2>
+    <p>If you have any questions about this privacy policy or how we handle your data, please use the <a href="index.html#contact">contact form</a> or reach out on <a href="https://www.instagram.com/selena.monroe.books/" target="_blank" rel="noopener">Instagram</a>.</p>
+  </div>
+</div>
+
+<footer>
+  <img src="Selena_Monroe_Logo_Transparent.png" alt="Selena Monroe" class="footer-logo">
+  <p class="footer-copy">&copy; 2026 Selena Monroe. Published in partnership with <a href="https://mythcodepress.com" target="_blank" rel="noopener">Mythcode Press</a>. · <a href="privacy.html">Privacy Policy</a><br><span style="font-size:0.78rem;opacity:0.6;">All content intended for readers 18+.</span></p>
+</footer>
+
+<script>
+  document.getElementById('navToggle').addEventListener('click', function() {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+  var dp = document.querySelector('.nav-has-dropdown');
+  if (dp) {
+    var dt = dp.querySelector('a'), dd = dp.querySelector('.nav-dropdown');
+    dt.addEventListener('click', function(e) {
+      if (window.innerWidth <= 480) { e.preventDefault(); dd.style.display = dd.style.display === 'block' ? 'none' : 'block'; }
+    });
+    document.addEventListener('click', function(e) { if (!dp.contains(e.target)) dd.style.display = ''; });
+  }
+</script>
+</body>
+</html>

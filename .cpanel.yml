@@ -22,4 +22,3 @@ deployment:
     - /bin/cp "The_Tide_Keeps_KU_v3.jpg" $DEPLOYPATH
     - /bin/cp "the_vast_and_particular_ku_cover.png" $DEPLOYPATH
     - /bin/cp "Website_Banner.png" $DEPLOYPATH
-    - /bin/cp -R images $DEPLOYPATH

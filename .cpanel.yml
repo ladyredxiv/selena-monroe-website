@@ -14,11 +14,14 @@ deployment:
     - /bin/cp "songs-of-eidmor.html" $DEPLOYPATH
     - /bin/cp "robots.txt" $DEPLOYPATH
     - /bin/cp "sitemap.xml" $DEPLOYPATH
+    - /bin/cp "books.json" $DEPLOYPATH
+    - /bin/cp "series.json" $DEPLOYPATH
     - /bin/cp "Night's Own KU Cover.png" $DEPLOYPATH
     - /bin/cp "Night_s_Own_KU_Cover.png" $DEPLOYPATH
     - /bin/cp "Selena_Monroe_Logo_Transparent.png" $DEPLOYPATH
     - /bin/cp "Selena_Monroe_Profile_Pic.png" $DEPLOYPATH
     - /bin/cp "The_Binding_Night.png" $DEPLOYPATH
     - /bin/cp "The_Tide_Keeps_KU_v3.jpg" $DEPLOYPATH
+    - /bin/cp "The_Turning_Season_KU.png" $DEPLOYPATH
     - /bin/cp "the_vast_and_particular_ku_cover.png" $DEPLOYPATH
     - /bin/cp "Website_Banner.png" $DEPLOYPATH

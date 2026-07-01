@@ -1,0 +1,155 @@
+{
+    "books":  [
+                  {
+                      "id":  "the-binding-night",
+                      "title":  "The Binding Night",
+                      "series_id":  "monstrous-beloved",
+                      "series_position":  1,
+                      "status":  "out-now",
+                      "status_label":  "Available Now",
+                      "cover_image":  "The_Binding_Night.png",
+                      "blurb":  "Sable summoned the wrong thing, and now she can\u0027t get rid of it. Vex has been waiting centuries for the right Carnelian to make exactly this mistake.",
+                      "links":  [
+                                    {
+                                        "label":  "Read on Amazon",
+                                        "url":  "https://www.amazon.com/dp/B0H2FZMM8N",
+                                        "primary":  true
+                                    },
+                                    {
+                                        "label":  "Content Notes",
+                                        "url":  "content-notes.html#binding-night"
+                                    }
+                                ],
+                      "homepage_group":  "available"
+                  },
+                  {
+                      "id":  "the-tide-keeps",
+                      "title":  "The Tide Keeps",
+                      "series_id":  "monstrous-beloved",
+                      "series_position":  2,
+                      "status":  "out-now",
+                      "status_label":  "Available Now",
+                      "cover_image":  "The_Tide_Keeps_KU_v3.jpg",
+                      "blurb":  "Petra came to Cauldmor to rebuild a career in quiet. Aoibhinn has been sitting on the rocks below the station for three years, calling it grief instead of what it is.",
+                      "links":  [
+                                    {
+                                        "label":  "Read on Amazon",
+                                        "url":  "https://www.amazon.com/dp/B0GX31W9GX",
+                                        "primary":  true
+                                    },
+                                    {
+                                        "label":  "Content Notes",
+                                        "url":  "content-notes.html#tide-keeps"
+                                    }
+                                ],
+                      "homepage_group":  "available"
+                  },
+                  {
+                      "id":  "nights-own",
+                      "title":  "Night\u0027s Own",
+                      "series_id":  "monstrous-beloved",
+                      "series_position":  3,
+                      "status":  "preorder",
+                      "status_label":  "Pre-order Now",
+                      "cover_image":  "Night_s_Own_KU_Cover.png",
+                      "blurb":  "Nox has fed on dreams for centuries and wanted nothing more. Then Vesper started writing toward her, and wanting nothing became impossible.",
+                      "links":  [
+                                    {
+                                        "label":  "Pre-order on Amazon",
+                                        "url":  "https://www.amazon.com/dp/B0H5RH5WHP",
+                                        "primary":  true
+                                    },
+                                    {
+                                        "label":  "Content Notes",
+                                        "url":  "content-notes.html#nights-own"
+                                    }
+                                ],
+                      "homepage_group":  "next"
+                  },
+                  {
+                      "id":  "the-vast-and-particular",
+                      "title":  "The Vast and Particular",
+                      "series_id":  "monstrous-beloved",
+                      "series_position":  4,
+                      "status":  "coming-soon",
+                      "status_label":  "Coming Soon",
+                      "cover_image":  "the_vast_and_particular_ku_cover.png",
+                      "blurb":  "Verity has managed every risk with careful precision. She did not account for the ancient entity in her basement that finds her fury delightful.",
+                      "links":  [
+                                    {
+                                        "label":  "Content Notes",
+                                        "url":  "content-notes.html#vast-and-particular"
+                                    }
+                                ],
+                      "homepage_group":  "next"
+                  },
+                  {
+                      "id":  "the-turning-season",
+                      "title":  "The Turning Season",
+                      "series_id":  "monstrous-beloved",
+                      "series_position":  5,
+                      "status":  "coming-soon",
+                      "status_label":  "Cover Revealed",
+                      "cover_image":  "The_Turning_Season_KU.png",
+                      "blurb":  "Elowen came back to Skovdal carrying shame she mistook for fact. Tarn has been holding space long enough.",
+                      "links":  [
+                                    {
+                                        "label":  "Get Notified",
+                                        "url":  "#newsletter"
+                                    }
+                                ],
+                      "homepage_group":  "next"
+                  },
+                  {
+                      "id":  "what-the-night-keeps",
+                      "title":  "What the Night Keeps",
+                      "series_id":  "monstrous-beloved",
+                      "series_position":  6,
+                      "status":  "planned",
+                      "status_label":  "Cover Reveal Coming Soon",
+                      "cover_image":  "",
+                      "blurb":  "Lucrezia has kept the Registry\u0027s buried records for centuries, waiting for a journalist worth trusting.",
+                      "links":  [
+                                    {
+                                        "label":  "Get Notified",
+                                        "url":  "#newsletter"
+                                    }
+                                ],
+                      "homepage_group":  "next"
+                  },
+                  {
+                      "id":  "what-the-hollow-keeps",
+                      "title":  "What the Hollow Keeps",
+                      "series_id":  "ashen-hearth",
+                      "series_position":  1,
+                      "status":  "planned",
+                      "status_label":  "Coming Soon",
+                      "cover_image":  "",
+                      "blurb":  "First book in The Ashen Hearth.",
+                      "links":  [
+                                    {
+                                        "label":  "Get Notified",
+                                        "url":  "#newsletter"
+                                    }
+                                ],
+                      "homepage_group":  "series-preview"
+                  },
+                  {
+                      "id":  "what-the-oath-heard",
+                      "title":  "What the Oath Heard",
+                      "series_id":  "songs-of-eidmor",
+                      "series_position":  1,
+                      "status":  "planned",
+                      "status_label":  "Coming Soon",
+                      "cover_image":  "",
+                      "blurb":  "First book in Songs of EiÃ°mor.",
+                      "links":  [
+                                    {
+                                        "label":  "Get Notified",
+                                        "url":  "#newsletter"
+                                    }
+                                ],
+                      "homepage_group":  "series-preview"
+                  }
+              ]
+}

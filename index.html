@@ -321,15 +321,24 @@
 
   .series-header .section-label { display: block; text-align: center; }
 
-  .books-grid {
+  .book-shelf {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 2.5rem;
+    gap: 3rem;
+  }
+
+  .available-books {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    align-items: stretch;
   }
 
   .book-card {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: minmax(170px, 0.68fr) minmax(0, 1fr);
+    gap: 1.35rem;
+    align-items: stretch;
+    min-width: 0;
   }
 
   .book-cover-wrap {
@@ -338,6 +347,7 @@
     border: 1px solid var(--border);
     aspect-ratio: 2/3;
     flex-shrink: 0;
+    background: var(--bg3);
   }
 
   .book-cover-wrap img {
@@ -348,7 +358,8 @@
     transition: transform 0.5s ease;
   }
 
-  .book-card:hover .book-cover-wrap img { transform: scale(1.04); }
+  .book-card:hover .book-cover-wrap img,
+  .upcoming-book:hover .upcoming-cover img { transform: scale(1.04); }
 
   .book-badge {
     position: absolute;
@@ -363,58 +374,11 @@
     text-transform: uppercase;
   }
 
-  .book-placeholder {
-    width: 100%;
-    height: 100%;
-    background: var(--bg3);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    padding: 2rem;
-    text-align: center;
-  }
-
-  .book-placeholder .placeholder-icon {
-    width: 48px;
-    height: 48px;
-    border: 1px solid var(--border-strong);
-    border-radius: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .book-placeholder .placeholder-icon svg {
-    width: 24px;
-    height: 24px;
-    fill: none;
-    stroke: var(--gold);
-    stroke-width: 1.5;
-  }
-
-  .book-placeholder-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: var(--gold-light);
-    line-height: 1.3;
-  }
-
-  .book-placeholder-sub {
-    font-family: 'Cinzel', serif;
-    font-size: 9px;
-    letter-spacing: 0.2em;
-    color: var(--text-muted);
-    text-transform: uppercase;
-  }
-
   .book-info {
-    padding: 1rem 0 0;
-    flex: 1;
+    min-width: 0;
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
 
   .book-number {
@@ -423,35 +387,126 @@
     letter-spacing: 0.25em;
     color: var(--text-muted);
     text-transform: uppercase;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.35rem;
   }
 
   .book-title {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.25rem;
+    font-size: clamp(1.35rem, 2.2vw, 1.85rem);
     font-weight: 500;
     color: var(--gold-light);
-    line-height: 1.3;
-    margin-bottom: 0.5rem;
+    line-height: 1.12;
+    margin-bottom: 0.65rem;
   }
 
   .book-tagline {
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
-    font-size: 0.95rem;
+    font-size: 1rem;
     color: var(--text-muted);
     line-height: 1.5;
-    flex: 1;
   }
 
   .book-actions {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    margin-top: 1rem;
+    margin-top: 1.1rem;
     align-items: center;
   }
 
+  .upcoming-panel {
+    border-top: 1px solid var(--border);
+    padding-top: 2.25rem;
+  }
+
+  .upcoming-heading {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .upcoming-heading h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.45rem, 2.5vw, 2rem);
+    color: var(--gold-light);
+    font-weight: 400;
+    line-height: 1.1;
+  }
+
+  .upcoming-heading a {
+    font-family: 'Cinzel', serif;
+    font-size: 9px;
+    letter-spacing: 0.18em;
+    color: var(--gold);
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .upcoming-list {
+    display: grid;
+    gap: 0;
+    border-top: 1px solid var(--border);
+  }
+
+  .upcoming-book {
+    display: grid;
+    grid-template-columns: 72px 1fr auto;
+    gap: 1rem;
+    align-items: center;
+    min-width: 0;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .upcoming-cover {
+    width: 72px;
+    aspect-ratio: 2/3;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    background: var(--bg3);
+  }
+
+  .upcoming-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+  }
+
+  .upcoming-cover.is-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.35rem;
+  }
+
+  .upcoming-copy { min-width: 0; }
+
+  .upcoming-copy .book-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .upcoming-copy .book-tagline {
+    font-size: 0.92rem;
+    line-height: 1.45;
+  }
+
+  .upcoming-status {
+    font-family: 'Cinzel', serif;
+    font-size: 9px;
+    letter-spacing: 0.18em;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
   .btn-sm {
     font-family: 'Cinzel', serif;
     font-size: 9px;
@@ -468,6 +523,19 @@
   }
 
   .btn-sm:hover { background: var(--gold); color: var(--bg); }
+  .btn-muted {
+    border-color: var(--border-strong);
+    color: var(--text-muted);
+  }
+
+  .book-loading,
+  .book-error {
+    text-align: center;
+    color: var(--text-muted);
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1rem;
+  }
 
   .content-notes-toggle {
     background: none;
@@ -833,7 +901,7 @@
     .about-grid { grid-template-columns: 1fr; gap: 3rem; }
     .about-photo-wrap { max-width: 320px; margin: 0 auto; }
     .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
-    .books-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 1.75rem; }
+    .available-books { grid-template-columns: 1fr; }
   }
 
   @media (max-width: 480px) {
@@ -1096,7 +1164,10 @@
     /* Layout */
     section { padding: 4rem 1.25rem; }
     .newsletter-section { padding: 4rem 1.25rem; }
-    .books-grid { grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
+    .available-books { grid-template-columns: 1fr; gap: 2rem; }
+    .book-card { grid-template-columns: minmax(110px, 0.45fr) minmax(0, 1fr); gap: 1rem; }
+    .upcoming-book { grid-template-columns: 56px 1fr; }
+    .upcoming-status { grid-column: 2; }
 
     /* Nav — hamburger only on small screens */
     nav { padding: 0 1.25rem; }
@@ -1205,8 +1276,7 @@
 
 <!-- LAUNCH BANNER — change display:none to display:flex to activate, update text and link -->
 <div class="launch-banner" id="launchBanner">
-  <span>✦ <strong>Night's Own</strong> is live — available now on Kindle Unlimited</span>
-  <a href="#books">Read Now →</a>
+  <span>✦ <strong>Night's Own</strong> is available for pre-order</span><a href="https://www.amazon.com/dp/B0H5RH5WHP" target="_blank" rel="noopener">Pre-order →</a>
 </div>
 
 <!-- COUNTDOWN — change display:none to display:block to activate, set RELEASE_DATE in JS below -->
@@ -1265,147 +1335,12 @@
       <p style="font-style:italic;color:var(--text-muted);font-size:1.05rem;max-width:560px;margin:1rem auto 0;">Six books. Six monsters. Six women who refuse to be anything less than the whole of themselves. This series is intended for readers 18+.</p>
     </div>
 
-    <div class="books-grid">
-
-      <!-- BOOK 1 -->
-      <div class="book-card reveal">
-        <div class="book-cover-wrap">
-          <img src="The_Binding_Night.png" alt="The Binding Night book cover">
-          <span class="book-badge">Available Now</span>
-        </div>
-        <div class="book-info">
-          <p class="book-number">Book One</p>
-          <h3 class="book-title">The Binding Night</h3>
-          <p class="book-tagline">Sable summoned the wrong thing, and now she can't get rid of it. Vex has been waiting centuries for the right Carnelian to make exactly this mistake.</p>
-          <div class="book-actions">
-            <a href="https://www.amazon.com/dp/B0H2FZMM8N" target="_blank" rel="noopener" class="btn-sm">Read on Amazon</a>
-            <button class="content-notes-toggle" onclick="toggleNotes(this)" aria-expanded="false">
-              Content Notes ▾
-            </button>
-          </div>
-          <div class="content-notes-panel">
-            <p><strong style="font-family:'Cinzel',serif;font-size:9px;letter-spacing:0.1em;color:var(--gold);text-transform:uppercase;">Content Notes</strong></p>
-            <p>Explicit sexual content (F/F) · Dubious consent (magical compulsion; all intimacy ultimately chosen) · Power imbalance · Emotional manipulation and deception · Coercive situation (forced proximity) · Referenced past death · Generational trauma · Morally grey MCs</p>
-            <p style="font-size:0.8rem;margin-top:0.5rem;opacity:0.7;"><a href="content-notes.html" style="color:var(--gold);">View full content notes →</a></p>
-          </div>
-        </div>
-      </div>
-
-      <!-- BOOK 2 -->
-      <div class="book-card reveal">
-        <div class="book-cover-wrap">
-          <img src="The_Tide_Keeps_KU_v3.jpg" alt="The Tide Keeps book cover">
-          <span class="book-badge">Available Now</span>
-        </div>
-        <div class="book-info">
-          <p class="book-number">Book Two</p>
-          <h3 class="book-title">The Tide Keeps</h3>
-          <p class="book-tagline">Petra came to Cauldmor to rebuild a career in quiet. Aoibhinn has been sitting on the rocks below the station for three years, calling it grief instead of what it is.</p>
-          <div class="book-actions">
-            <a href="https://www.amazon.com/dp/B0GX31W9GX" target="_blank" rel="noopener" class="btn-sm">Read on Amazon</a>
-            <button class="content-notes-toggle" onclick="toggleNotes(this)" aria-expanded="false">
-              Content Notes ▾
-            </button>
-          </div>
-          <div class="content-notes-panel">
-            <p><strong style="font-family:'Cinzel',serif;font-size:9px;letter-spacing:0.1em;color:var(--gold);text-transform:uppercase;">Content Notes</strong></p>
-            <p>Explicit sexual content (F/F) · Grief and prolonged trauma response · Institutional cover-up · Power imbalance · Referenced community death and displacement (off-page) · Environmental harm · Morally complex secondary character</p>
-            <p style="font-size:0.8rem;margin-top:0.5rem;opacity:0.7;"><a href="content-notes.html" style="color:var(--gold);">View full content notes →</a></p>
-          </div>
-        </div>
-      </div>
-
-      <!-- BOOK 3 -->
-      <div class="book-card reveal">
-        <div class="book-cover-wrap">
-          <img src="Night_s_Own_KU_Cover.png" alt="Night's Own book cover">
-          <span class="book-badge">Coming Soon</span>
-        </div>
-        <div class="book-info">
-          <p class="book-number">Book Three</p>
-          <h3 class="book-title">Night's Own</h3>
-          <p class="book-tagline">Nox has fed on dreams for centuries and wanted nothing more. Then Vesper started writing toward her — and wanting nothing became impossible.</p>
-          <div class="book-actions">
-            <span class="btn-sm" style="opacity:0.45;cursor:default;border-color:var(--text-muted);color:var(--text-muted);">Coming Soon</span>
-            <button class="content-notes-toggle" onclick="toggleNotes(this)" aria-expanded="false">
-              Content Notes ▾
-            </button>
-          </div>
-          <div class="content-notes-panel">
-            <p><strong style="font-family:'Cinzel',serif;font-size:9px;letter-spacing:0.1em;color:var(--gold);text-transform:uppercase;">Content Notes</strong></p>
-            <p>Explicit sexual content (F/F) · Dubious consent (dream-feeding mechanic; resolved) · Non-consensual access to mental/interior space · Emotionally manipulative dynamic (historical) · Divorce and emotional abuse (past, referenced) · Creative ownership violation · Institutional surveillance · Dissociation and identity disruption (mild)</p>
-            <p style="font-size:0.8rem;margin-top:0.5rem;opacity:0.7;"><a href="content-notes.html" style="color:var(--gold);">View full content notes →</a></p>
-          </div>
-        </div>
-      </div>
-
-      <!-- BOOK 4 -->
-      <div class="book-card reveal">
-        <div class="book-cover-wrap">
-          <img src="the_vast_and_particular_ku_cover.png" alt="The Vast and Particular book cover">
-          <span class="book-badge">Coming Soon</span>
-        </div>
-        <div class="book-info">
-          <p class="book-number">Book Four</p>
-          <h3 class="book-title">The Vast and Particular</h3>
-          <p class="book-tagline">Verity has managed every risk in her black-market operation with careful precision. She did not account for the ancient entity in her basement that finds her fury delightful.</p>
-          <div class="book-actions">
-            <span class="btn-sm" style="opacity:0.45;cursor:default;border-color:var(--text-muted);color:var(--text-muted);">Coming Soon</span>
-            <button class="content-notes-toggle" onclick="toggleNotes(this)" aria-expanded="false">
-              Content Notes ▾
-            </button>
-          </div>
-          <div class="content-notes-panel">
-            <p><strong style="font-family:'Cinzel',serif;font-size:9px;letter-spacing:0.1em;color:var(--gold);text-transform:uppercase;">Content Notes</strong></p>
-            <p>Explicit sexual content (F/F) · Dubious consent (perception without knowledge; addressed in narrative) · Non-consensual access to mental/interior space (historical) · Institutional betrayal and career destruction (historical) · Power imbalance (scale; entity/human) · Surveillance and institutional threat · Coercive summoning (accidental) · Grief and professional loss</p>
-            <p style="font-size:0.8rem;margin-top:0.5rem;opacity:0.7;"><a href="content-notes.html" style="color:var(--gold);">View full content notes →</a></p>
-          </div>
-        </div>
-      </div>
-
-      <!-- BOOK 5 PLACEHOLDER -->
-      <div class="book-card reveal">
-        <div class="book-cover-wrap">
-          <div class="book-placeholder">
-            <div class="placeholder-icon">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke-linejoin="round" stroke-linecap="round"/></svg>
-            </div>
-            <p class="book-placeholder-title">The Turning Season</p>
-            <p class="book-placeholder-sub">Cover Reveal Coming Soon</p>
-          </div>
-        </div>
-        <div class="book-info">
-          <p class="book-number">Book Five</p>
-          <h3 class="book-title">The Turning Season</h3>
-          <p class="book-tagline">Elowen came back to Skovdal carrying shame she mistook for fact. Tarn has been holding space long enough. The valley remembers everything they haven't said.</p>
-          <div class="book-actions">
-            <a href="#newsletter" class="btn-sm">Get Notified</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- BOOK 6 PLACEHOLDER -->
-      <div class="book-card reveal">
-        <div class="book-cover-wrap">
-          <div class="book-placeholder">
-            <div class="placeholder-icon">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke-linejoin="round" stroke-linecap="round"/></svg>
-            </div>
-            <p class="book-placeholder-title">What the Night Keeps</p>
-            <p class="book-placeholder-sub">Cover Reveal Coming Soon</p>
-          </div>
-        </div>
-        <div class="book-info">
-          <p class="book-number">Book Six</p>
-          <h3 class="book-title">What the Night Keeps</h3>
-          <p class="book-tagline">Lucrezia has been keeping the Registry's buried records for centuries, waiting for a journalist worth trusting. She did not plan for what happens when she finally finds one.</p>
-          <div class="book-actions">
-            <a href="#newsletter" class="btn-sm">Get Notified</a>
-          </div>
-        </div>
-      </div>
-
+    <div id="booksShelf" class="book-shelf" data-series="monstrous-beloved">
+      <p class="book-loading">Loading books...</p>
     </div>
+    <noscript>
+      <p style="text-align:center;color:var(--text-muted);font-style:italic;">JavaScript is required to load the current book list. Visit the <a href="reading-order.html" style="color:var(--gold);">reading order</a> for the full series.</p>
+    </noscript>
   </section>
 </div>
 
@@ -1618,6 +1553,80 @@
     }
   });
 
+
+  function escapeHtml(value) {
+    return String(value == null ? '' : value)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
+  function ordinalLabel(number) {
+    var names = ['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine'];
+    return 'Book ' + (names[number] || number);
+  }
+
+  function linkHtml(link, muted) {
+    if (!link || !link.url) return '';
+    var isExternal = /^https?:/i.test(link.url);
+    return '<a href="' + escapeHtml(link.url) + '"' + (isExternal ? ' target="_blank" rel="noopener"' : '') + ' class="btn-sm' + (muted ? ' btn-muted' : '') + '">' + escapeHtml(link.label || 'Learn More') + '</a>';
+  }
+
+  function coverHtml(book, className) {
+    if (book.cover_image) {
+      return '<div class="' + className + '"><img src="' + escapeHtml(book.cover_image) + '" alt="' + escapeHtml(book.title) + ' book cover"></div>';
+    }
+    return '<div class="' + className + ' is-placeholder" aria-hidden="true">' + escapeHtml(book.series_position || '') + '</div>';
+  }
+
+  function renderBookshelf(books) {
+    var shelf = document.getElementById('booksShelf');
+    if (!shelf) return;
+    var seriesId = shelf.getAttribute('data-series');
+    var seriesBooks = books
+      .filter(function(book) { return book.series_id === seriesId; })
+      .sort(function(a, b) { return (a.series_position || 0) - (b.series_position || 0); });
+    var available = seriesBooks.filter(function(book) { return book.homepage_group === 'available'; });
+    var upcoming = seriesBooks.filter(function(book) { return book.homepage_group !== 'available'; });
+
+    var availableHtml = available.map(function(book) {
+      var primary = (book.links || []).find(function(link) { return link.primary; }) || (book.links || [])[0];
+      var secondary = (book.links || []).find(function(link) { return !link.primary; });
+      return '<article class="book-card reveal">'
+        + '<div class="book-cover-wrap"><img src="' + escapeHtml(book.cover_image) + '" alt="' + escapeHtml(book.title) + ' book cover"><span class="book-badge">' + escapeHtml(book.status_label) + '</span></div>'
+        + '<div class="book-info"><p class="book-number">' + escapeHtml(ordinalLabel(book.series_position)) + '</p>'
+        + '<h3 class="book-title">' + escapeHtml(book.title) + '</h3>'
+        + '<p class="book-tagline">' + escapeHtml(book.blurb) + '</p>'
+        + '<div class="book-actions">' + linkHtml(primary, false) + linkHtml(secondary, true) + '</div></div></article>';
+    }).join('');
+
+    var upcomingHtml = upcoming.map(function(book) {
+      var primary = (book.links || []).find(function(link) { return link.primary; });
+      var action = primary ? linkHtml(primary, false) : '<span>' + escapeHtml(book.status_label) + '</span>';
+      return '<article class="upcoming-book">'
+        + coverHtml(book, 'upcoming-cover')
+        + '<div class="upcoming-copy"><p class="book-number">' + escapeHtml(ordinalLabel(book.series_position)) + '</p>'
+        + '<h4 class="book-title">' + escapeHtml(book.title) + '</h4>'
+        + '<p class="book-tagline">' + escapeHtml(book.blurb) + '</p></div>'
+        + '<div class="upcoming-status">' + action + '</div></article>';
+    }).join('');
+
+    shelf.innerHTML = '<div class="available-books">' + availableHtml + '</div>'
+      + '<div class="upcoming-panel reveal"><div class="upcoming-heading"><h3>Next in the series</h3><a href="reading-order.html">Full Reading Order</a></div>'
+      + '<div class="upcoming-list">' + upcomingHtml + '</div></div>';
+  }
+
+  Promise.all([
+    fetch('books.json').then(function(response) { return response.json(); }),
+    fetch('series.json').then(function(response) { return response.json(); })
+  ]).then(function(results) {
+    renderBookshelf(results[0].books || []);
+  }).catch(function() {
+    var shelf = document.getElementById('booksShelf');
+    if (shelf) shelf.innerHTML = '<p class="book-error">The book list could not load. Visit the <a href="reading-order.html" style="color:var(--gold);">reading order</a> for the full series.</p>';
+  });
   // Content notes toggle
   function toggleNotes(btn) {
     var panel = btn.closest('.book-info').querySelector('.content-notes-panel');

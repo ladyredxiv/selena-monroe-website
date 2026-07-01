@@ -835,18 +835,6 @@
     margin: 0;
   }
 
-  /* SCROLL FADE IN */
-  .reveal {
-    opacity: 0;
-    transform: translateY(24px);
-    transition: opacity 0.7s ease, transform 0.7s ease;
-  }
-
-  .reveal.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
   /* AGE GATE */
   .age-gate {
     position: fixed;
@@ -1324,7 +1312,7 @@
 <!-- SERIES -->
 <div class="series-bg section-full">
   <section id="books" style="max-width:1200px; padding: 6rem 2rem;">
-    <div class="series-header reveal">
+    <div class="series-header">
       <span class="section-label">A Sapphic Dark Romantasy Series</span>
       <h2 class="section-title">The Monstrous Beloved</h2>
       <div style="display:flex;align-items:center;justify-content:center;gap:1rem;margin-bottom:0.5rem;">
@@ -1346,7 +1334,7 @@
 
 <!-- MORE FROM SELENA -->
 <section id="more-series" style="padding: 5rem 2rem; max-width: 1200px; margin: 0 auto;">
-  <div class="series-header reveal" style="text-align:center; margin-bottom: 3rem;">
+  <div class="series-header" style="text-align:center; margin-bottom: 3rem;">
     <span class="section-label" style="display:block;text-align:center;">More from Selena Monroe</span>
     <h2 class="section-title">Upcoming Series</h2>
     <div style="display:flex;align-items:center;justify-content:center;gap:1rem;margin-bottom:0.5rem;">
@@ -1360,7 +1348,7 @@
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:3rem;">
 
     <!-- ASHEN HEARTH -->
-    <div class="reveal" style="display:flex;gap:1.75rem;align-items:flex-start;">
+    <div style="display:flex;gap:1.75rem;align-items:flex-start;">
       <div style="flex-shrink:0;width:120px;border:1px solid var(--border);aspect-ratio:2/3;background:var(--bg3);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.75rem;padding:1rem;text-align:center;">
         <div style="width:36px;height:36px;border:1px solid var(--border-strong);display:flex;align-items:center;justify-content:center;">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c0 0-4 4-4 8s4 8 4 8"/><path d="M12 2c0 0 4 4 4 8s-4 8-4 8"/><path d="M5 12h14"/></svg>
@@ -1376,7 +1364,7 @@
     </div>
 
     <!-- SONGS OF EIÐMOR -->
-    <div class="reveal" style="display:flex;gap:1.75rem;align-items:flex-start;">
+    <div style="display:flex;gap:1.75rem;align-items:flex-start;">
       <div style="flex-shrink:0;width:120px;border:1px solid var(--border);aspect-ratio:2/3;background:var(--bg3);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.75rem;padding:1rem;text-align:center;">
         <div style="width:36px;height:36px;border:1px solid var(--border-strong);display:flex;align-items:center;justify-content:center;">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
@@ -1396,7 +1384,7 @@
 
 <!-- QUOTE PULL -->
 <div class="quote-section">
-  <div class="quote-inner reveal">
+  <div class="quote-inner">
     <span class="quote-mark">"</span>
     <!-- REPLACE THIS LINE WITH YOUR QUOTE -->
     <p class="quote-text">"I don't want this," she said. She said it flat, because the alternative was screaming.</p>
@@ -1408,10 +1396,10 @@
 <!-- ABOUT -->
 <section id="about">
   <div class="about-grid">
-    <div class="about-photo-wrap reveal">
+    <div class="about-photo-wrap">
       <img src="Selena_Monroe_Profile_Pic.png" alt="Selena Monroe, author">
     </div>
-    <div class="about-text reveal">
+    <div class="about-text">
       <span class="section-label">About the Author</span>
       <h2 class="section-title">Selena Monroe</h2>
       <div class="ornament"><div class="ornament-diamond"></div></div>
@@ -1432,7 +1420,7 @@
 
 <!-- NEWSLETTER -->
 <div class="newsletter-section" id="newsletter">
-  <div class="newsletter-inner reveal">
+  <div class="newsletter-inner">
     <span class="section-label">Stay in the Dark</span>
     <h2 class="section-title" style="margin-bottom:0.5rem;">Join the Coven</h2>
     <p>Cover reveals, release news, bonus content, and the occasional letter from something that should not be writing letters. No spam — only the good omens.</p>
@@ -1445,7 +1433,7 @@
 <!-- CONTACT -->
 <section id="contact">
   <div class="contact-grid">
-    <div class="contact-info reveal">
+    <div class="contact-info">
       <span class="section-label">Get in Touch</span>
       <h2 class="section-title">Contact</h2>
       <div class="ornament"><div class="ornament-diamond"></div></div>
@@ -1458,7 +1446,7 @@
         <a href="https://mythcodepress.com" target="_blank" rel="noopener">Mythcode Press</a>
       </div>
     </div>
-    <div class="reveal">
+    <div>
       <form class="contact-form" action="https://formspree.io/f/xbdbnqpl" method="POST">
         <input type="text" name="name" placeholder="Your Name" required autocomplete="name">
         <input type="email" name="email" placeholder="Your Email" required autocomplete="email">
@@ -1640,20 +1628,6 @@
   window.addEventListener('scroll', function() {
     btt.classList.toggle('visible', window.scrollY > 400);
   });
-
-  // Scroll reveal
-  var reveals = document.querySelectorAll('.reveal');
-  var observer = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.08 });
-  reveals.forEach(function(el) { observer.observe(el); });
-
-
 
   // Cookie banner
   function dismissCookie() {

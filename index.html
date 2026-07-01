@@ -1594,7 +1594,7 @@
     var availableHtml = available.map(function(book) {
       var primary = (book.links || []).find(function(link) { return link.primary; }) || (book.links || [])[0];
       var secondary = (book.links || []).find(function(link) { return !link.primary; });
-      return '<article class="book-card reveal">'
+      return '<article class="book-card">'
         + '<div class="book-cover-wrap"><img src="' + escapeHtml(book.cover_image) + '" alt="' + escapeHtml(book.title) + ' book cover"><span class="book-badge">' + escapeHtml(book.status_label) + '</span></div>'
         + '<div class="book-info"><p class="book-number">' + escapeHtml(ordinalLabel(book.series_position)) + '</p>'
         + '<h3 class="book-title">' + escapeHtml(book.title) + '</h3>'
@@ -1614,7 +1614,7 @@
     }).join('');
 
     shelf.innerHTML = '<div class="available-books">' + availableHtml + '</div>'
-      + '<div class="upcoming-panel reveal"><div class="upcoming-heading"><h3>Next in the series</h3><a href="reading-order.html">Full Reading Order</a></div>'
+      + '<div class="upcoming-panel"><div class="upcoming-heading"><h3>Next in the series</h3><a href="reading-order.html">Full Reading Order</a></div>'
       + '<div class="upcoming-list">' + upcomingHtml + '</div></div>';
   }
 

@@ -131,8 +131,6 @@
 
   /* SHARED */
   .section-label { font-family: 'Cinzel', serif; font-size: 10px; letter-spacing: 0.35em; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 0.75rem; }
-  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
-  .reveal.visible { opacity: 1; transform: translateY(0); }
   .back-to-top { position: fixed; bottom: 2rem; right: 2rem; width: 42px; height: 42px; background: var(--bg2); border: 1px solid var(--border-strong); color: var(--gold); display: flex; align-items: center; justify-content: center; cursor: pointer; opacity: 0; pointer-events: none; transition: opacity 0.3s, background 0.2s; z-index: 50; font-size: 16px; }
   .back-to-top.visible { opacity: 1; pointer-events: all; }
   .back-to-top:hover { background: var(--gold); color: var(--bg); }
@@ -236,7 +234,7 @@
 
 <div class="series-hero">
   <div class="series-hero-bg"></div>
-  <div class="series-hero-content reveal">
+  <div class="series-hero-content">
     <p class="series-eyebrow">Selena Monroe</p>
     <h1 class="series-main-title">The Monstrous<br>Beloved</h1>
     <p class="series-subtitle">Six women. Six monsters. Six choices the Registry cannot classify, contain, or explain away.</p>
@@ -250,7 +248,7 @@
 </div>
 
 <div class="registry-section">
-  <div class="registry-inner reveal">
+  <div class="registry-inner">
     <div class="registry-header">
       <div>
         <p class="registry-stamp">THE REGISTRY OF MAGICAL PRACTICES<br>OFFICE OF CLASSIFICATION &amp; CONTAINMENT<br>INTERNAL DOCUMENT — NOT FOR DISTRIBUTION</p>
@@ -293,7 +291,7 @@
   </div>
 </div>
 
-<div class="world-break reveal">
+<div class="world-break">
   <span class="section-label">The World</span>
   <h2>Where the Registry Does Not Reach</h2>
   <p>The world of The Monstrous Beloved runs parallel to our own — older in some places, stranger in others. Magic is real, regulated, and deeply inconvenient to anyone who doesn't fit the forms. The Registry tries. The world resists. The women at the centre of each story are not looking for monsters. They find them anyway.</p>
@@ -302,28 +300,28 @@
 
 <div class="thread-section">
   <div class="thread-inner">
-    <div class="thread-header reveal">
+    <div class="thread-header">
       <span class="section-label">The Thread</span>
       <h2 class="thread-title">Victor Marlow — A Registry Man<br>Coming Undone Across Six Books</h2>
       <p style="font-style:italic;color:var(--text-muted);max-width:520px;margin:1rem auto 0;font-size:1rem;line-height:1.7;">You don't need to track him. But if you do, the series rewards it.</p>
     </div>
-    <div class="thread-line reveal"><div class="thread-dot"></div><span class="thread-book">The Binding Night — Book One</span><p class="thread-desc">Victor Marlow arrives as an antagonist — a Registry investigator who cannot unravel what Sable and Vex have become to each other. He follows protocol. He files his report. He protects them from the system anyway, for reasons he does not fully examine. The crack forms here.</p></div>
-    <div class="thread-line reveal"><div class="thread-dot"></div><span class="thread-book">The Tide Keeps — Book Two</span><p class="thread-desc">The Registry's sanctioned destruction of a selkie community comes into focus. Marlow holds a file that documents institutional harm and chooses, for now, to bury it quietly. He tells himself it is pragmatism. It is the thing he will spend the rest of the series paying for.</p></div>
-    <div class="thread-line reveal"><div class="thread-dot"></div><span class="thread-book">Night's Own — Book Three</span><p class="thread-desc">Marlow finds a thread in a novelist's published work pointing to non-human influence. The creature flagged is classified as extinct. He holds Soren's loss in one hand and a living thing asking to be seen in the other. For the first time, fully and openly, he chooses the creature over the institution.</p></div>
-    <div class="thread-line reveal"><div class="thread-dot"></div><span class="thread-book">The Vast and Particular — Book Four</span><p class="thread-desc">An accidental summoning in a Morwick basement produces something beyond any category the Registry has ever built. Marlow arrives not to shut it down, but because he cannot look away. Something broke open in him after Book Three, and it shows.</p></div>
-    <div class="thread-line reveal"><div class="thread-dot"></div><span class="thread-book">The Turning Season — Book Five</span><p class="thread-desc">Marlow's decision in Book Three ripples outward and reaches a valley in Skovdal. A classification changes. The absence of constraint makes the weight of having carried it visible. He does not appear in this book. His choices do.</p></div>
-    <div class="thread-line reveal"><div class="thread-dot"></div><span class="thread-book">What the Night Keeps — Book Six</span><p class="thread-desc">A journalist arrives in Selvast with the Registry's pattern in one hand and a file on herself in the other. Lucrezia has been keeping the records Marlow's institution hoped no one would find. The institution is not destroyed. But something is on the record. The world keeps going with the truth in it.</p></div>
+    <div class="thread-line"><div class="thread-dot"></div><span class="thread-book">The Binding Night — Book One</span><p class="thread-desc">Victor Marlow arrives as an antagonist — a Registry investigator who cannot unravel what Sable and Vex have become to each other. He follows protocol. He files his report. He protects them from the system anyway, for reasons he does not fully examine. The crack forms here.</p></div>
+    <div class="thread-line"><div class="thread-dot"></div><span class="thread-book">The Tide Keeps — Book Two</span><p class="thread-desc">The Registry's sanctioned destruction of a selkie community comes into focus. Marlow holds a file that documents institutional harm and chooses, for now, to bury it quietly. He tells himself it is pragmatism. It is the thing he will spend the rest of the series paying for.</p></div>
+    <div class="thread-line"><div class="thread-dot"></div><span class="thread-book">Night's Own — Book Three</span><p class="thread-desc">Marlow finds a thread in a novelist's published work pointing to non-human influence. The creature flagged is classified as extinct. He holds Soren's loss in one hand and a living thing asking to be seen in the other. For the first time, fully and openly, he chooses the creature over the institution.</p></div>
+    <div class="thread-line"><div class="thread-dot"></div><span class="thread-book">The Vast and Particular — Book Four</span><p class="thread-desc">An accidental summoning in a Morwick basement produces something beyond any category the Registry has ever built. Marlow arrives not to shut it down, but because he cannot look away. Something broke open in him after Book Three, and it shows.</p></div>
+    <div class="thread-line"><div class="thread-dot"></div><span class="thread-book">The Turning Season — Book Five</span><p class="thread-desc">Marlow's decision in Book Three ripples outward and reaches a valley in Skovdal. A classification changes. The absence of constraint makes the weight of having carried it visible. He does not appear in this book. His choices do.</p></div>
+    <div class="thread-line"><div class="thread-dot"></div><span class="thread-book">What the Night Keeps — Book Six</span><p class="thread-desc">A journalist arrives in Selvast with the Registry's pattern in one hand and a file on herself in the other. Lucrezia has been keeping the records Marlow's institution hoped no one would find. The institution is not destroyed. But something is on the record. The world keeps going with the truth in it.</p></div>
   </div>
 </div>
 
 <div class="books-section">
-  <div class="books-section-header reveal">
+  <div class="books-section-header">
     <span class="section-label">The Complete Series</span>
     <h2>All Six Books</h2>
     <p>Each a standalone romance. Each guaranteed to end well. Read in order for the full world — or start wherever calls to you.</p>
   </div>
   <div class="books-grid">
-    <div class="book-card reveal">
+    <div class="book-card">
       <div class="book-cover-wrap"><img src="The_Binding_Night_home.jpg" alt="The Binding Night"><span class="book-badge">Available Now</span></div>
       <div class="book-info">
         <p class="book-number">Book One</p><h3 class="book-title">The Binding Night</h3>
@@ -332,7 +330,7 @@
         <div class="content-notes-panel"><p><strong style="font-family:'Cinzel',serif;font-size:9px;letter-spacing:0.1em;color:var(--gold);text-transform:uppercase;">Content Notes</strong></p><p>Explicit sexual content (F/F) · Dubious consent (magical compulsion; all intimacy ultimately chosen) · Power imbalance · Emotional manipulation and deception · Coercive situation (forced proximity) · Referenced past death · Generational trauma · Morally grey MCs</p></div>
       </div>
     </div>
-    <div class="book-card reveal">
+    <div class="book-card">
       <div class="book-cover-wrap"><img src="The_Tide_Keeps_home.jpg" alt="The Tide Keeps"><span class="book-badge">Available Now</span></div>
       <div class="book-info">
         <p class="book-number">Book Two</p><h3 class="book-title">The Tide Keeps</h3>
@@ -341,7 +339,7 @@
         <div class="content-notes-panel"><p><strong style="font-family:'Cinzel',serif;font-size:9px;letter-spacing:0.1em;color:var(--gold);text-transform:uppercase;">Content Notes</strong></p><p>Explicit sexual content (F/F) · Grief and prolonged trauma response · Institutional cover-up · Power imbalance · Referenced community death and displacement (off-page) · Environmental harm · Morally complex secondary character</p></div>
       </div>
     </div>
-    <div class="book-card reveal">
+    <div class="book-card">
       <div class="book-cover-wrap"><img src="Night_s_Own_KU_Cover_home.jpg" alt="Night's Own"><span class="book-badge">Available Now</span></div>
       <div class="book-info">
         <p class="book-number">Book Three</p><h3 class="book-title">Night's Own</h3>
@@ -350,7 +348,7 @@
         <div class="content-notes-panel"><p><strong style="font-family:'Cinzel',serif;font-size:9px;letter-spacing:0.1em;color:var(--gold);text-transform:uppercase;">Content Notes</strong></p><p>Explicit sexual content (F/F) · Dubious consent (dream-feeding mechanic; resolved) · Non-consensual access to mental/interior space · Emotionally manipulative dynamic (historical) · Divorce and emotional abuse (past, referenced) · Creative ownership violation · Institutional surveillance · Dissociation and identity disruption (mild)</p></div>
       </div>
     </div>
-    <div class="book-card reveal">
+    <div class="book-card">
       <div class="book-cover-wrap"><img src="the_vast_and_particular_home.jpg" alt="The Vast and Particular"><span class="book-badge">Coming Soon</span></div>
       <div class="book-info">
         <p class="book-number">Book Four</p><h3 class="book-title">The Vast and Particular</h3>
@@ -359,7 +357,7 @@
         <div class="content-notes-panel"><p><strong style="font-family:'Cinzel',serif;font-size:9px;letter-spacing:0.1em;color:var(--gold);text-transform:uppercase;">Content Notes</strong></p><p>Explicit sexual content (F/F) · Dubious consent (perception without knowledge; addressed in narrative) · Non-consensual access to mental/interior space (historical) · Institutional betrayal and career destruction (historical) · Power imbalance (scale; entity/human) · Surveillance and institutional threat · Coercive summoning (accidental) · Grief and professional loss</p></div>
       </div>
     </div>
-    <div class="book-card reveal">
+    <div class="book-card">
       <div class="book-cover-wrap"><img src="The_Turning_Season_home.jpg" alt="The Turning Season"><span class="book-badge">Cover Revealed</span></div>
       <div class="book-info">
         <p class="book-number">Book Five</p><h3 class="book-title">The Turning Season</h3>
@@ -367,7 +365,7 @@
         <div class="book-actions"><a href="index.html#newsletter" class="btn-sm">Get Notified</a></div>
       </div>
     </div>
-    <div class="book-card reveal">
+    <div class="book-card">
       <div class="book-cover-wrap"><div class="book-placeholder"><svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke-linejoin="round" stroke-linecap="round"/></svg><p class="book-placeholder-title">What the Night Keeps</p><p class="book-placeholder-sub">Cover Reveal TBA</p></div></div>
       <div class="book-info">
         <p class="book-number">Book Six</p><h3 class="book-title">What the Night Keeps</h3>
@@ -378,7 +376,7 @@
   </div>
 </div>
 
-<div class="series-cta reveal">
+<div class="series-cta">
   <span class="section-label">New to the Series?</span>
   <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,4vw,2.5rem);font-weight:400;color:var(--gold-light);margin-bottom:0.5rem;">Start with Book One</h2>
   <p>The Binding Night is a complete story with a guaranteed happy ending. No cliffhangers. No prior knowledge required.</p>
@@ -409,11 +407,6 @@
     var isOpen = panel.classList.toggle('open');
     btn.textContent = isOpen ? 'Content Notes ▴' : 'Content Notes ▾';
   }
-  var reveals = document.querySelectorAll('.reveal');
-  var observer = new IntersectionObserver(function(entries) {
-    entries.forEach(function(e) { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
-  }, { threshold: 0.08 });
-  reveals.forEach(function(el) { observer.observe(el); });
   var btt = document.getElementById('backToTop');
   window.addEventListener('scroll', function() { btt.classList.toggle('visible', window.scrollY > 400); });
   document.getElementById('navToggle').addEventListener('click', function() {

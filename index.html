@@ -26,8 +26,8 @@
 <meta name="twitter:image" content="https://selenamonroe.com/Website_Banner.png">
 
 <!-- Favicon -->
-<link rel="icon" type="image/png" href="Selena_Monroe_Logo_Transparent.png">
-<link rel="apple-touch-icon" href="Selena_Monroe_Logo_Transparent.png">
+<link rel="icon" type="image/png" href="Selena_Monroe_Logo_Transparent_256.png">
+<link rel="apple-touch-icon" href="Selena_Monroe_Logo_Transparent_256.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Cinzel:wght@400;500&display=swap" rel="stylesheet">
@@ -1227,7 +1227,7 @@
 <!-- AGE GATE -->
 <div class="age-gate" id="ageGate">
   <div class="age-gate-box">
-    <img src="Selena_Monroe_Logo_Transparent.png" alt="Selena Monroe" class="age-gate-logo">
+    <img src="Selena_Monroe_Logo_Transparent_256.png" alt="Selena Monroe" class="age-gate-logo">
     <p class="age-gate-title">This site contains 18+ content</p>
     <p class="age-gate-text">Selena Monroe's work includes mature themes, explicit romance, and dark fantasy elements. Please confirm you are 18 years of age or older to enter.</p>
     <div class="age-gate-buttons">
@@ -1240,7 +1240,7 @@
 <!-- NAVIGATION -->
 <nav>
   <a class="nav-logo" href="#home">
-    <img src="Selena_Monroe_Logo_Transparent.png" alt="Selena Monroe">
+    <img src="Selena_Monroe_Logo_Transparent_256.png" alt="Selena Monroe">
   </a>
   <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
     <span></span><span></span><span></span>
@@ -1299,7 +1299,7 @@
 
 <!-- HERO -->
 <section id="home" class="hero" style="padding: 0; max-width: 100%;">
-  <img src="Website_Banner.png" alt="" class="hero-banner" aria-hidden="true">
+  <img src="Website_Banner_web.jpg" alt="" class="hero-banner" fetchpriority="high" aria-hidden="true">
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <div class="hero-cta">
@@ -1397,7 +1397,7 @@
 <section id="about">
   <div class="about-grid">
     <div class="about-photo-wrap">
-      <img src="Selena_Monroe_Profile_Pic.png" alt="Selena Monroe, author">
+      <img src="Selena_Monroe_Profile_Pic_web.jpg" alt="Selena Monroe, author" loading="lazy" decoding="async">
     </div>
     <div class="about-text">
       <span class="section-label">About the Author</span>
@@ -1460,7 +1460,7 @@
 
 <!-- FOOTER -->
 <footer>
-  <img src="Selena_Monroe_Logo_Transparent.png" alt="Selena Monroe" class="footer-logo">
+  <img src="Selena_Monroe_Logo_Transparent_256.png" alt="Selena Monroe" class="footer-logo">
   <p class="footer-tagline">Where desire meets darkness, and women claim what they deserve.</p>
   <ul class="footer-nav">
     <li><a href="#books">The Series</a></li>
@@ -1564,7 +1564,7 @@
 
   function coverHtml(book, className) {
     if (book.cover_image) {
-      return '<div class="' + className + '"><img src="' + escapeHtml(book.cover_image) + '" alt="' + escapeHtml(book.title) + ' book cover"></div>';
+      return '<div class="' + className + '"><img src="' + escapeHtml(book.homepage_cover_image || book.cover_image) + '" alt="' + escapeHtml(book.title) + ' book cover" loading="lazy" decoding="async"></div>';
     }
     return '<div class="' + className + ' is-placeholder" aria-hidden="true">' + escapeHtml(book.series_position || '') + '</div>';
   }
@@ -1583,7 +1583,7 @@
       var primary = (book.links || []).find(function(link) { return link.primary; }) || (book.links || [])[0];
       var secondary = (book.links || []).find(function(link) { return !link.primary; });
       return '<article class="book-card">'
-        + '<div class="book-cover-wrap"><img src="' + escapeHtml(book.cover_image) + '" alt="' + escapeHtml(book.title) + ' book cover"><span class="book-badge">' + escapeHtml(book.status_label) + '</span></div>'
+        + '<div class="book-cover-wrap"><img src="' + escapeHtml(book.homepage_cover_image || book.cover_image) + '" alt="' + escapeHtml(book.title) + ' book cover" loading="lazy" decoding="async"><span class="book-badge">' + escapeHtml(book.status_label) + '</span></div>'
         + '<div class="book-info"><p class="book-number">' + escapeHtml(ordinalLabel(book.series_position)) + '</p>'
         + '<h3 class="book-title">' + escapeHtml(book.title) + '</h3>'
         + '<p class="book-tagline">' + escapeHtml(book.blurb) + '</p>'

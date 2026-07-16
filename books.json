@@ -20,7 +20,8 @@
                                         "url":  "content-notes.html#binding-night"
                                     }
                                 ],
-                      "homepage_group":  "available"
+                      "homepage_group":  "available",
+                      "homepage_cover_image":  "The_Binding_Night_home.jpg"
                   },
                   {
                       "id":  "the-tide-keeps",
@@ -42,7 +43,8 @@
                                         "url":  "content-notes.html#tide-keeps"
                                     }
                                 ],
-                      "homepage_group":  "available"
+                      "homepage_group":  "available",
+                      "homepage_cover_image":  "The_Tide_Keeps_home.jpg"
                   },
                   {
                       "id":  "nights-own",
@@ -64,7 +66,8 @@
                                         "url":  "content-notes.html#nights-own"
                                     }
                                 ],
-                      "homepage_group":  "available"
+                      "homepage_group":  "available",
+                      "homepage_cover_image":  "Night_s_Own_KU_Cover_home.jpg"
                   },
                   {
                       "id":  "the-vast-and-particular",
@@ -81,7 +84,8 @@
                                         "url":  "content-notes.html#vast-and-particular"
                                     }
                                 ],
-                      "homepage_group":  "next"
+                      "homepage_group":  "next",
+                      "homepage_cover_image":  "the_vast_and_particular_home.jpg"
                   },
                   {
                       "id":  "the-turning-season",
@@ -98,7 +102,8 @@
                                         "url":  "#newsletter"
                                     }
                                 ],
-                      "homepage_group":  "next"
+                      "homepage_group":  "next",
+                      "homepage_cover_image":  "The_Turning_Season_home.jpg"
                   },
                   {
                       "id":  "what-the-night-keeps",

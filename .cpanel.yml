@@ -25,3 +25,11 @@ deployment:
     - /bin/cp "The_Turning_Season_KU.png" $DEPLOYPATH
     - /bin/cp "the_vast_and_particular_ku_cover.png" $DEPLOYPATH
     - /bin/cp "Website_Banner.png" $DEPLOYPATH
+    - /bin/cp "The_Turning_Season_home.jpg" $DEPLOYPATH
+    - /bin/cp "the_vast_and_particular_home.jpg" $DEPLOYPATH
+    - /bin/cp "Night_s_Own_KU_Cover_home.jpg" $DEPLOYPATH
+    - /bin/cp "The_Tide_Keeps_home.jpg" $DEPLOYPATH
+    - /bin/cp "The_Binding_Night_home.jpg" $DEPLOYPATH
+    - /bin/cp "Website_Banner_web.jpg" $DEPLOYPATH
+    - /bin/cp "Selena_Monroe_Profile_Pic_web.jpg" $DEPLOYPATH
+    - /bin/cp "Selena_Monroe_Logo_Transparent_256.png" $DEPLOYPATH

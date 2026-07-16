@@ -49,13 +49,13 @@
                       "title":  "Night\u0027s Own",
                       "series_id":  "monstrous-beloved",
                       "series_position":  3,
-                      "status":  "preorder",
-                      "status_label":  "Pre-order Now",
+                      "status":  "out-now",
+                      "status_label":  "Available Now",
                       "cover_image":  "Night_s_Own_KU_Cover.png",
                       "blurb":  "Nox has fed on dreams for centuries and wanted nothing more. Then Vesper started writing toward her, and wanting nothing became impossible.",
                       "links":  [
                                     {
-                                        "label":  "Pre-order on Amazon",
+                                        "label":  "Read on Amazon",
                                         "url":  "https://www.amazon.com/dp/B0H5RH5WHP",
                                         "primary":  true
                                     },
@@ -64,7 +64,7 @@
                                         "url":  "content-notes.html#nights-own"
                                     }
                                 ],
-                      "homepage_group":  "next"
+                      "homepage_group":  "available"
                   },
                   {
                       "id":  "the-vast-and-particular",

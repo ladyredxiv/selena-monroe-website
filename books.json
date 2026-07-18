@@ -122,40 +122,6 @@
                                 ],
                       "homepage_group":  "next",
                       "homepage_cover_image":  "What_the_Night_Keeps_home.jpg"
-                  },
-                  {
-                      "id":  "what-the-hollow-keeps",
-                      "title":  "What the Hollow Keeps",
-                      "series_id":  "ashen-hearth",
-                      "series_position":  1,
-                      "status":  "planned",
-                      "status_label":  "Coming Soon",
-                      "cover_image":  "",
-                      "blurb":  "First book in The Ashen Hearth.",
-                      "links":  [
-                                    {
-                                        "label":  "Get Notified",
-                                        "url":  "#newsletter"
-                                    }
-                                ],
-                      "homepage_group":  "series-preview"
-                  },
-                  {
-                      "id":  "what-the-oath-heard",
-                      "title":  "What the Oath Heard",
-                      "series_id":  "songs-of-eidmor",
-                      "series_position":  1,
-                      "status":  "planned",
-                      "status_label":  "Coming Soon",
-                      "cover_image":  "",
-                      "blurb":  "First book in Songs of EiÃ°mor.",
-                      "links":  [
-                                    {
-                                        "label":  "Get Notified",
-                                        "url":  "#newsletter"
-                                    }
-                                ],
-                      "homepage_group":  "series-preview"
                   }
               ]
 }

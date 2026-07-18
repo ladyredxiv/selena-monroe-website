@@ -1,7 +1,5 @@
 {
   "series": [
-    {"id":"monstrous-beloved","title":"The Monstrous Beloved","subtitle":"A Sapphic Dark Romantasy Series","description":"Six books. Six monsters. Six women who refuse to be anything less than the whole of themselves. This series is intended for readers 18+.","page_url":"monstrous-beloved.html","status":"active","planned_books":6,"homepage":true},
-    {"id":"ashen-hearth","title":"The Ashen Hearth","subtitle":"A New Series","description":"First book: What the Hollow Keeps. Five more titles to be announced.","page_url":"ashen-hearth.html","status":"planned","planned_books":6,"homepage":true},
-    {"id":"songs-of-eidmor","title":"Songs of Eiðmor","subtitle":"A New Series","description":"First book: What the Oath Heard. Five more titles to be announced.","page_url":"songs-of-eidmor.html","status":"planned","planned_books":6,"homepage":true}
+    {"id":"monstrous-beloved","title":"The Monstrous Beloved","subtitle":"A Sapphic Dark Romantasy Series","description":"Six books. Six monsters. Six women who refuse to be anything less than the whole of themselves. This series is intended for readers 18+.","page_url":"monstrous-beloved.html","status":"active","planned_books":6,"homepage":true}
   ]
 }

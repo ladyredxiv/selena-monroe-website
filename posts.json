@@ -1,0 +1,76 @@
+{
+  "posts": [
+    {
+      "slug": "what-is-the-registry-of-magical-practices",
+      "title": "What Is the Registry of Magical Practices?",
+      "dek": "The quiet institution behind The Monstrous Beloved is less a villain than a system with very sharp teeth.",
+      "date": "2026-05-12",
+      "displayDate": "May 12, 2026",
+      "category": "Registry File",
+      "readTime": "6 minute read",
+      "description": "A spoiler-light guide to the Registry of Magical Practices, the institution connecting Selena Monroe's sapphic dark romantasy series The Monstrous Beloved.",
+      "keywords": [
+        "The Registry",
+        "The Monstrous Beloved",
+        "sapphic dark romantasy",
+        "magical institutions"
+      ],
+      "relatedBook": "The Monstrous Beloved",
+      "excerpt": "Across The Monstrous Beloved, the Registry is the institution that decides what magic may be named, which creatures may be classified, and whose danger counts as official fact."
+    },
+    {
+      "slug": "the-binding-night-bargains-bindings-and-consent",
+      "title": "Bargains, Bindings, and Consent in The Binding Night",
+      "dek": "A failed summoning creates the first bond in The Monstrous Beloved, but the real story is what happens when a trap becomes a choice.",
+      "date": "2026-05-19",
+      "displayDate": "May 19, 2026",
+      "category": "Book Lore",
+      "readTime": "5 minute read",
+      "description": "A spoiler-light worldbuilding and theme note for The Binding Night by Selena Monroe, exploring bargains, magical bindings, and consent in dark romantasy.",
+      "keywords": [
+        "The Binding Night",
+        "demon romance",
+        "sapphic romantasy",
+        "magical binding"
+      ],
+      "relatedBook": "The Binding Night",
+      "excerpt": "The Binding Night begins with a summoning mistake, but its central question is not how to escape the bond. It is whether a bond can be remade into something chosen."
+    },
+    {
+      "slug": "cauldmor-research-station-and-the-grief-beneath-the-tide-keeps",
+      "title": "Cauldmor Research Station and the Grief Beneath The Tide Keeps",
+      "dek": "The coast in The Tide Keeps is not a backdrop. It is an archive, a wound, and a witness.",
+      "date": "2026-06-02",
+      "displayDate": "June 2, 2026",
+      "category": "Field Notes",
+      "readTime": "6 minute read",
+      "description": "A spoiler-light field note on Cauldmor Research Station, selkie mythology, grief, and archive gaps in Selena Monroe's The Tide Keeps.",
+      "keywords": [
+        "The Tide Keeps",
+        "selkie romance",
+        "coastal gothic",
+        "Cauldmor Research Station"
+      ],
+      "relatedBook": "The Tide Keeps",
+      "excerpt": "Cauldmor Research Station turns scientific observation into gothic pressure: what is missing from the archive matters as much as what has been recorded."
+    },
+    {
+      "slug": "dream-feeding-creative-obsession-and-nights-own",
+      "title": "Dream-Feeding, Creative Obsession, and Night's Own",
+      "dek": "Nox feeds on dreams. Vesper writes them down. The danger begins when being known starts to feel like being chosen.",
+      "date": "2026-07-15",
+      "displayDate": "July 15, 2026",
+      "category": "Creature Notes",
+      "readTime": "6 minute read",
+      "description": "A spoiler-light creature note for Night's Own by Selena Monroe, exploring strix mythology, dreams, creative obsession, and sapphic dark romance.",
+      "keywords": [
+        "Night's Own",
+        "strix mythology",
+        "dream feeding",
+        "sapphic dark romance"
+      ],
+      "relatedBook": "Night's Own",
+      "excerpt": "Night's Own turns inspiration into something with teeth: a strix who feeds on dreams and a novelist who begins writing toward the dark."
+    }
+  ]
+}

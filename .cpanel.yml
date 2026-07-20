@@ -16,6 +16,11 @@ deployment:
     - /bin/cp "sitemap.xml" $DEPLOYPATH
     - /bin/cp "books.json" $DEPLOYPATH
     - /bin/cp "series.json" $DEPLOYPATH
+    - /bin/cp "posts.json" $DEPLOYPATH
+    - /bin/cp "archive.html" $DEPLOYPATH
+    - /bin/cp "archive-feed.xml" $DEPLOYPATH
+    - /bin/mkdir -p $DEPLOYPATH/archive
+    - /bin/cp -R archive/* $DEPLOYPATH/archive/
     - /bin/cp "Night's Own KU Cover.png" $DEPLOYPATH
     - /bin/cp "Night_s_Own_KU_Cover.png" $DEPLOYPATH
     - /bin/cp "Selena_Monroe_Logo_Transparent.png" $DEPLOYPATH

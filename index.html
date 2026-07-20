@@ -1120,7 +1120,11 @@
     opacity: 0.6;
   }
 
-  /* MOBILE POLISH */
+  /* MOBILE POLISH */  @media (max-width: 900px) {
+    .archive-preview-grid { grid-template-columns: 1fr; }
+    .archive-preview-header { align-items: flex-start; flex-direction: column; }
+  }
+
   @media (max-width: 768px) {
     .about-grid { gap: 2rem; }
     .about-photo-wrap { max-width: 260px; }
@@ -1253,6 +1257,7 @@
         <a href="reading-order.html">Full Reading Order</a>
       </div>
     </li>
+    <li><a href="archive.html">Archive</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#newsletter">Newsletter</a></li>
     <li><a href="press.html">Press</a></li>
@@ -1342,6 +1347,39 @@
 </div>
 
 <!-- ABOUT -->
+<section class="archive-preview" aria-labelledby="archive-preview-title">
+  <div class="archive-preview-header">
+    <div>
+      <span class="section-label">Field Notes</span>
+      <h2 class="section-title" id="archive-preview-title">Latest from the Archive</h2>
+    </div>
+    <a class="archive-preview-link" href="archive.html">Explore the Archive</a>
+  </div>
+  <div class="archive-preview-grid">
+    <a class="archive-preview-card" href="archive/what-is-the-registry-of-magical-practices/">
+      <div>
+        <time datetime="2026-05-12">May 12, 2026<br>Registry File</time>
+        <h3>What Is the Registry of Magical Practices?</h3>
+      </div>
+      <p>Across The Monstrous Beloved, the Registry is the institution that decides what magic may be named, which creatures may be classified, and whose danger counts as official fact.</p>
+    </a>
+    <a class="archive-preview-card" href="archive/the-binding-night-bargains-bindings-and-consent/">
+      <div>
+        <time datetime="2026-05-19">May 19, 2026<br>Book Lore</time>
+        <h3>Bargains, Bindings, and Consent in The Binding Night</h3>
+      </div>
+      <p>The Binding Night begins with a summoning mistake, but its central question is not how to escape the bond. It is whether a bond can be remade into something chosen.</p>
+    </a>
+    <a class="archive-preview-card" href="archive/cauldmor-research-station-and-the-grief-beneath-the-tide-keeps/">
+      <div>
+        <time datetime="2026-06-02">June 2, 2026<br>Field Notes</time>
+        <h3>Cauldmor Research Station and the Grief Beneath The Tide Keeps</h3>
+      </div>
+      <p>Cauldmor Research Station turns scientific observation into gothic pressure: what is missing from the archive matters as much as what has been recorded.</p>
+    </a>
+  </div>
+</section>
+
 <section id="about">
   <div class="about-grid">
     <div class="about-photo-wrap">

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Selena Monroe Archive</title>
+    <link>https://selenamonroe.com/archive.html</link>
+    <description>Lore, worldbuilding, creature notes, and book-adjacent essays from The Monstrous Beloved.</description>
+    <language>en-us</language>
+    <atom:link href="https://selenamonroe.com/archive-feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What Is the Registry of Magical Practices?</title>
+      <link>https://selenamonroe.com/archive/what-is-the-registry-of-magical-practices/</link>
+      <guid>https://selenamonroe.com/archive/what-is-the-registry-of-magical-practices/</guid>
+      <pubDate>Tue, 12 May 2026 16:00:00 GMT</pubDate>
+      <description>Across The Monstrous Beloved, the Registry is the institution that decides what magic may be named, which creatures may be classified, and whose danger counts as official fact.</description>
+    </item>
+    <item>
+      <title>Bargains, Bindings, and Consent in The Binding Night</title>
+      <link>https://selenamonroe.com/archive/the-binding-night-bargains-bindings-and-consent/</link>
+      <guid>https://selenamonroe.com/archive/the-binding-night-bargains-bindings-and-consent/</guid>
+      <pubDate>Tue, 19 May 2026 16:00:00 GMT</pubDate>
+      <description>The Binding Night begins with a summoning mistake, but its central question is not how to escape the bond. It is whether a bond can be remade into something chosen.</description>
+    </item>
+    <item>
+      <title>Cauldmor Research Station and the Grief Beneath The Tide Keeps</title>
+      <link>https://selenamonroe.com/archive/cauldmor-research-station-and-the-grief-beneath-the-tide-keeps/</link>
+      <guid>https://selenamonroe.com/archive/cauldmor-research-station-and-the-grief-beneath-the-tide-keeps/</guid>
+      <pubDate>Tue, 02 Jun 2026 16:00:00 GMT</pubDate>
+      <description>Cauldmor Research Station turns scientific observation into gothic pressure: what is missing from the archive matters as much as what has been recorded.</description>
+    </item>
+    <item>
+      <title>Dream-Feeding, Creative Obsession, and Night&apos;s Own</title>
+      <link>https://selenamonroe.com/archive/dream-feeding-creative-obsession-and-nights-own/</link>
+      <guid>https://selenamonroe.com/archive/dream-feeding-creative-obsession-and-nights-own/</guid>
+      <pubDate>Wed, 15 Jul 2026 16:00:00 GMT</pubDate>
+      <description>Night&apos;s Own turns inspiration into something with teeth: a strix who feeds on dreams and a novelist who begins writing toward the dark.</description>
+    </item>
+  </channel>
+</rss>

@@ -16,6 +16,7 @@ deployment:
     - /bin/cp "sitemap.xml" $DEPLOYPATH
     - /bin/cp "books.json" $DEPLOYPATH
     - /bin/cp "series.json" $DEPLOYPATH
+    - /bin/cp "omnibuses.json" $DEPLOYPATH
     - /bin/cp "posts.json" $DEPLOYPATH
     - /bin/cp "archive.html" $DEPLOYPATH
     - /bin/cp "archive-feed.xml" $DEPLOYPATH
@@ -45,3 +46,6 @@ deployment:
     - /bin/cp "Website_Banner_web.jpg" $DEPLOYPATH
     - /bin/cp "Selena_Monroe_Profile_Pic_web.jpg" $DEPLOYPATH
     - /bin/cp "Selena_Monroe_Logo_Transparent_256.png" $DEPLOYPATH
+
+    - /bin/cp "Monstrous_Beloved_Volume_I_web.jpg" $DEPLOYPATH
+    - /bin/cp "Monstrous_Beloved_Volume_II_web.jpg" $DEPLOYPATH

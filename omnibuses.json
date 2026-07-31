@@ -1,0 +1,40 @@
+{
+  "omnibuses": [
+    {
+      "id": "monstrous-beloved-volume-1",
+      "title": "The Monstrous Beloved Volume I",
+      "series_id": "monstrous-beloved",
+      "volume": 1,
+      "includes": [
+        "The Binding Night",
+        "The Tide Keeps",
+        "Night's Own"
+      ],
+      "status": "preorder",
+      "status_label": "Pre-order",
+      "preorder_date": "2026-11-04",
+      "preorder_label": "Pre-order opens November 4, 2026",
+      "cover_image": "Monstrous_Beloved_Volume_I_web.jpg",
+      "blurb": "Books one through three collected together: three sapphic monster romances, three Registry failures, and the first cracks in the official record.",
+      "links": []
+    },
+    {
+      "id": "monstrous-beloved-volume-2",
+      "title": "The Monstrous Beloved Volume II",
+      "series_id": "monstrous-beloved",
+      "volume": 2,
+      "includes": [
+        "The Vast and Particular",
+        "The Turning Season",
+        "What the Night Keeps"
+      ],
+      "status": "preorder",
+      "status_label": "Pre-order",
+      "preorder_date": "2026-12-03",
+      "preorder_label": "Pre-order opens December 3, 2026",
+      "cover_image": "Monstrous_Beloved_Volume_II_web.jpg",
+      "blurb": "Books four through six collected together: stranger bargains, deeper Registry pressure, and the end of the thread the institution tried to bury.",
+      "links": []
+    }
+  ]
+}

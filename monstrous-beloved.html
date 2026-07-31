@@ -120,6 +120,19 @@
   .content-notes-panel { display: none; margin-top: 0.75rem; padding: 0.85rem 1rem; border: 1px solid var(--border); background: var(--bg3); font-size: 0.85rem; line-height: 1.65; color: var(--text-muted); }
   .content-notes-panel.open { display: block; }
 
+  .omnibus-section { padding: 0 2rem 6rem; max-width: 1120px; margin: 0 auto; }
+  .omnibus-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; }
+  .omnibus-card { display: grid; grid-template-columns: minmax(150px, 0.42fr) minmax(0, 1fr); gap: 1.5rem; align-items: start; border: 1px solid var(--border); background: rgba(255,255,255,0.025); padding: 1rem; }
+  .omnibus-cover { position: relative; overflow: hidden; border: 1px solid var(--border); aspect-ratio: 2/3; }
+  .omnibus-cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .omnibus-badge { position: absolute; top: 0.6rem; left: 0.6rem; font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 0.18em; background: var(--crimson); color: var(--text); padding: 3px 8px; text-transform: uppercase; }
+  .omnibus-info { padding: 0.4rem 0.25rem 0; }
+  .omnibus-kicker { font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 0.25em; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.35rem; }
+  .omnibus-title { font-family: 'Cormorant Garamond', serif; font-size: 1.45rem; font-weight: 500; color: var(--gold-light); line-height: 1.2; margin-bottom: 0.6rem; }
+  .omnibus-includes { color: var(--gold); font-size: 0.98rem; font-style: italic; line-height: 1.5; margin-bottom: 0.75rem; }
+  .omnibus-desc { color: var(--text-muted); font-size: 0.95rem; line-height: 1.55; margin-bottom: 1rem; }
+  .omnibus-date { display: inline-block; border: 1px solid var(--border); color: var(--text-muted); font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 0.16em; text-transform: uppercase; padding: 0.45rem 0.75rem; line-height: 1.5; }
+
   /* CTA */
   .series-cta { background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 5rem 2rem; text-align: center; }
   .series-cta p { font-style: italic; color: var(--text-muted); max-width: 480px; margin: 0.75rem auto 2rem; font-size: 1.05rem; line-height: 1.75; }
@@ -150,9 +163,11 @@
     .registry-header { grid-template-columns: 1fr; }
     .registry-section::before { display: none; }
     .books-grid { grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    .omnibus-grid { grid-template-columns: 1fr; }
   }
   @media (max-width: 600px) {
     .books-grid { grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
+    .omnibus-card { grid-template-columns: 1fr; }
     .series-main-title { font-size: 3rem; }
     .cta-buttons { flex-direction: column; align-items: center; }
   }
@@ -372,6 +387,36 @@
         <div class="book-actions"><a href="index.html#newsletter" class="btn-sm">Get Notified</a></div>
       </div>
     </div>
+  </div>
+</div>
+
+<div class="omnibus-section" id="omnibus-editions">
+  <div class="books-section-header">
+    <span class="section-label">Collected Editions</span>
+    <h2>Omnibus Editions</h2>
+    <p>The complete series will also be available in two collected volumes for readers who want the full arc in larger editions.</p>
+  </div>
+  <div class="omnibus-grid">
+    <article class="omnibus-card">
+      <div class="omnibus-cover"><img src="Monstrous_Beloved_Volume_I_web.jpg" alt="The Monstrous Beloved Volume I omnibus cover" loading="lazy" decoding="async"><span class="omnibus-badge">Pre-order</span></div>
+      <div class="omnibus-info">
+        <p class="omnibus-kicker">Books One-Three</p>
+        <h3 class="omnibus-title">The Monstrous Beloved Volume I</h3>
+        <p class="omnibus-includes">The Binding Night, The Tide Keeps, and Night's Own</p>
+        <p class="omnibus-desc">Three sapphic monster romances, three Registry failures, and the first cracks in the official record.</p>
+        <span class="omnibus-date">Pre-order opens November 4, 2026</span>
+      </div>
+    </article>
+    <article class="omnibus-card">
+      <div class="omnibus-cover"><img src="Monstrous_Beloved_Volume_II_web.jpg" alt="The Monstrous Beloved Volume II omnibus cover" loading="lazy" decoding="async"><span class="omnibus-badge">Pre-order</span></div>
+      <div class="omnibus-info">
+        <p class="omnibus-kicker">Books Four-Six</p>
+        <h3 class="omnibus-title">The Monstrous Beloved Volume II</h3>
+        <p class="omnibus-includes">The Vast and Particular, The Turning Season, and What the Night Keeps</p>
+        <p class="omnibus-desc">Stranger bargains, deeper Registry pressure, and the end of the thread the institution tried to bury.</p>
+        <span class="omnibus-date">Pre-order opens December 3, 2026</span>
+      </div>
+    </article>
   </div>
 </div>
 

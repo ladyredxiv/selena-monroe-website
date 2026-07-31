@@ -47,5 +47,9 @@ deployment:
     - /bin/cp "Selena_Monroe_Profile_Pic_web.jpg" $DEPLOYPATH
     - /bin/cp "Selena_Monroe_Logo_Transparent_256.png" $DEPLOYPATH
 
+    - /bin/cp "A_Compact_of_Salt_and_Iron_home.jpg" $DEPLOYPATH
+    - /bin/cp "A_Compact_of_Salt_and_Iron_web.jpg" $DEPLOYPATH
+    - /bin/cp "A_Vow_of_Iron_and_Blood_home.jpg" $DEPLOYPATH
+    - /bin/cp "A_Vow_of_Iron_and_Blood_web.jpg" $DEPLOYPATH
     - /bin/cp "Monstrous_Beloved_Volume_I_web.jpg" $DEPLOYPATH
     - /bin/cp "Monstrous_Beloved_Volume_II_web.jpg" $DEPLOYPATH

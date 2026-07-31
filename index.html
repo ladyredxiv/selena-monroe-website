@@ -1022,6 +1022,16 @@
     color: var(--gold);
     text-transform: uppercase;
   }
+  .archive-preview { padding: 5rem 2rem; max-width: 1040px; margin: 0 auto; }
+  .archive-preview-header { display: flex; align-items: end; justify-content: space-between; gap: 1.5rem; margin-bottom: 2rem; }
+  .archive-preview-header .section-title { margin-bottom: 0; }
+  .archive-preview-link { font-family: 'Cinzel', serif; font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); text-decoration: none; border-bottom: 1px solid var(--border-strong); padding-bottom: 0.2rem; white-space: nowrap; }
+  .archive-preview-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+  .archive-preview-card { border: 1px solid var(--border); background: rgba(255,255,255,0.025); padding: 1.4rem; text-decoration: none; color: var(--text); transition: border-color 0.2s, background 0.2s; min-height: 210px; display: flex; flex-direction: column; justify-content: space-between; }
+  .archive-preview-card:hover { border-color: var(--border-strong); background: rgba(184,154,106,0.055); }
+  .archive-preview-card time { font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-muted); line-height: 1.8; }
+  .archive-preview-card h3 { font-family: 'Cormorant Garamond', serif; font-weight: 500; color: var(--gold-light); font-size: 1.45rem; line-height: 1.15; margin: 0.75rem 0 0.5rem; }
+  .archive-preview-card p { color: var(--text-muted); font-style: italic; font-size: 0.98rem; }
   /* LAUNCH BANNER */
   .launch-banner {
     display: none; /* Set to flex to activate */
@@ -1356,19 +1366,19 @@
     <a class="archive-preview-link" href="archive.html">Explore the Archive</a>
   </div>
   <div class="archive-preview-grid">
-    <a class="archive-preview-card" href="archive/what-is-the-registry-of-magical-practices/">
+    <a class="archive-preview-card" href="archive/the-turning-season-is-drafted-notes-from-skovdal/">
       <div>
-        <time datetime="2026-05-12">May 12, 2026<br>Registry File</time>
-        <h3>What Is the Registry of Magical Practices?</h3>
+        <time datetime="2026-07-30">July 30, 2026<br>Drafting Notes</time>
+        <h3>The Turning Season Is Drafted: Notes from Skovdal</h3>
       </div>
-      <p>Across The Monstrous Beloved, the Registry is the institution that decides what magic may be named, which creatures may be classified, and whose danger counts as official fact.</p>
+      <p>The Turning Season is drafted, and Skovdal has become a place where homecoming, shapeshifting, shame, and the Registry's watch all press against the same wound.</p>
     </a>
-    <a class="archive-preview-card" href="archive/the-binding-night-bargains-bindings-and-consent/">
+    <a class="archive-preview-card" href="archive/dream-feeding-creative-obsession-and-nights-own/">
       <div>
-        <time datetime="2026-05-19">May 19, 2026<br>Book Lore</time>
-        <h3>Bargains, Bindings, and Consent in The Binding Night</h3>
+        <time datetime="2026-07-15">July 15, 2026<br>Creature Notes</time>
+        <h3>Dream-Feeding, Creative Obsession, and Night's Own</h3>
       </div>
-      <p>The Binding Night begins with a summoning mistake, but its central question is not how to escape the bond. It is whether a bond can be remade into something chosen.</p>
+      <p>Night's Own turns inspiration into something with teeth: a strix who feeds on dreams and a novelist who begins writing toward the dark.</p>
     </a>
     <a class="archive-preview-card" href="archive/cauldmor-research-station-and-the-grief-beneath-the-tide-keeps/">
       <div>

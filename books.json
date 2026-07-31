@@ -74,11 +74,16 @@
                       "title":  "The Vast and Particular",
                       "series_id":  "monstrous-beloved",
                       "series_position":  4,
-                      "status":  "coming-soon",
-                      "status_label":  "Coming Soon",
+                      "status":  "preorder",
+                      "status_label":  "Pre-order",
                       "cover_image":  "the_vast_and_particular_ku_cover_v2.jpg",
                       "blurb":  "Verity has managed every risk with careful precision. She did not account for the ancient entity in her basement that finds her fury delightful.",
                       "links":  [
+                                    {
+                                        "label":  "Pre-order on Amazon",
+                                        "url":  "https://www.amazon.com/dp/B0H9BKYWZQ",
+                                        "primary":  true
+                                    },
                                     {
                                         "label":  "Content Notes",
                                         "url":  "content-notes.html#vast-and-particular"
@@ -92,36 +97,42 @@
                       "title":  "The Turning Season",
                       "series_id":  "monstrous-beloved",
                       "series_position":  5,
-                      "status":  "coming-soon",
-                      "status_label":  "Cover Revealed",
+                      "status":  "preorder",
+                      "status_label":  "Pre-order",
                       "cover_image":  "The_Turning_Season_KU_v2.jpg",
                       "blurb":  "Elowen came back to Skovdal carrying shame she mistook for fact. Tarn has been holding space long enough.",
                       "links":  [
                                     {
-                                        "label":  "Get Notified",
-                                        "url":  "#newsletter"
+                                        "label":  "Pre-order on Amazon",
+                                        "url":  "https://www.amazon.com/dp/B0HC9Y9MP3",
+                                        "primary":  true
                                     }
                                 ],
                       "homepage_group":  "next",
-                      "homepage_cover_image":  "The_Turning_Season_home.jpg"
+                      "homepage_cover_image":  "The_Turning_Season_home.jpg",
+                      "release_date":  "2026-09-09",
+                      "release_label":  "Releases September 9, 2026"
                   },
                   {
                       "id":  "what-the-night-keeps",
                       "title":  "What the Night Keeps",
                       "series_id":  "monstrous-beloved",
                       "series_position":  6,
-                      "status":  "planned",
-                      "status_label":  "Cover Revealed",
+                      "status":  "preorder",
+                      "status_label":  "Pre-order",
                       "cover_image":  "What_the_Night_Keeps_KU_Cover.jpg",
                       "blurb":  "Lucrezia has kept the Registry\u0027s buried records for centuries, waiting for a journalist worth trusting.",
                       "links":  [
                                     {
-                                        "label":  "Get Notified",
-                                        "url":  "#newsletter"
+                                        "label":  "Pre-order on Amazon",
+                                        "url":  "https://www.amazon.com/dp/B0HC9W1MDW",
+                                        "primary":  true
                                     }
                                 ],
                       "homepage_group":  "next",
-                      "homepage_cover_image":  "What_the_Night_Keeps_home.jpg"
+                      "homepage_cover_image":  "What_the_Night_Keeps_home.jpg",
+                      "release_date":  "2026-10-07",
+                      "release_label":  "Releases October 7, 2026"
                   }
               ]
 }

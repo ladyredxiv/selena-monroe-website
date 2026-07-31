@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="canonical" href="https://selenamonroe.com/">
 <title>Selena Monroe — Author</title>
-<meta name="description" content="Selena Monroe writes dark fantasy romance filled with dangerous longing, monstrous devotion, and women who survive each other anyway. Home of The Monstrous Beloved series.">
+<meta name="description" content="Selena Monroe writes dark fantasy romance filled with dangerous longing, monstrous devotion, and women who survive each other anyway. Home of The Monstrous Beloved and The Blood and Bracer Chronicles.">
 <meta name="author" content="Selena Monroe">
 <meta name="theme-color" content="#0D0B0F">
 
@@ -980,6 +980,120 @@
     opacity: 0.6;
   }
 
+  .next-series-section {
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    padding: 6rem 2rem;
+  }
+
+  .next-series-inner {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+
+  .next-series-header {
+    max-width: 760px;
+    margin-bottom: 2.5rem;
+  }
+
+  .next-series-header .section-title {
+    margin-bottom: 0.75rem;
+  }
+
+  .next-series-lede {
+    color: var(--text-muted);
+    font-style: italic;
+    font-size: 1.08rem;
+    line-height: 1.75;
+  }
+
+  .next-series-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+    align-items: stretch;
+  }
+
+  .next-series-card {
+    display: grid;
+    grid-template-columns: minmax(150px, 0.44fr) minmax(0, 1fr);
+    gap: 1.25rem;
+    border: 1px solid var(--border);
+    background: rgba(255,255,255,0.025);
+    padding: 1rem;
+    min-width: 0;
+  }
+
+  .next-series-cover {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    aspect-ratio: 2 / 3;
+  }
+
+  .next-series-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .next-series-badge {
+    position: absolute;
+    top: 0.6rem;
+    left: 0.6rem;
+    font-family: 'Cinzel', serif;
+    font-size: 9px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--text);
+    background: var(--crimson);
+    padding: 0.25rem 0.55rem;
+  }
+
+  .next-series-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0;
+  }
+
+  .next-series-kicker {
+    font-family: 'Cinzel', serif;
+    font-size: 9px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 0.35rem;
+  }
+
+  .next-series-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.45rem, 3vw, 2rem);
+    font-weight: 500;
+    color: var(--gold-light);
+    line-height: 1.12;
+    margin-bottom: 0.75rem;
+  }
+
+  .next-series-copy p {
+    color: var(--text-muted);
+    font-style: italic;
+    line-height: 1.58;
+    margin-bottom: 1rem;
+  }
+
+  .next-series-status {
+    display: inline-block;
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    font-family: 'Cinzel', serif;
+    font-size: 9px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    padding: 0.5rem 0.75rem;
+    align-self: flex-start;
+  }
   /* QUOTE PULL */
   .quote-section {
     padding: 5rem 2rem;
@@ -1131,7 +1245,7 @@
   }
 
   /* MOBILE POLISH */  @media (max-width: 900px) {
-    .archive-preview-grid { grid-template-columns: 1fr; }
+    .archive-preview-grid, .next-series-grid { grid-template-columns: 1fr; }
     .archive-preview-header { align-items: flex-start; flex-direction: column; }
   }
 
@@ -1167,6 +1281,7 @@
     section { padding: 4rem 1.25rem; }
     .newsletter-section { padding: 4rem 1.25rem; }
     .available-books { grid-template-columns: 1fr; gap: 2rem; }
+    .next-series-card { grid-template-columns: minmax(105px, 0.42fr) minmax(0, 1fr); gap: 1rem; }
     .book-card { grid-template-columns: minmax(110px, 0.45fr) minmax(0, 1fr); gap: 1rem; }
     .upcoming-book { grid-template-columns: 56px 1fr; }
     .upcoming-status { grid-column: 2; }
@@ -1264,6 +1379,7 @@
       <a href="#books">Books</a>
       <div class="nav-dropdown">
         <a href="monstrous-beloved.html">The Monstrous Beloved</a>
+        <a href="#blood-and-bracer">Blood and Bracer</a>
         <a href="reading-order.html">Full Reading Order</a>
       </div>
     </li>
@@ -1345,6 +1461,42 @@
   </section>
 </div>
 
+<!-- NEXT SERIES -->
+<section class="next-series-section" id="blood-and-bracer" aria-labelledby="blood-and-bracer-title">
+  <div class="next-series-inner">
+    <div class="next-series-header">
+      <span class="section-label">Coming Next Year</span>
+      <h2 class="section-title" id="blood-and-bracer-title">The Blood and Bracer Chronicles</h2>
+      <p class="next-series-lede">Old Blood houses, binding-stones, forbidden contracts, and girls who survive the systems built to own them. A new sapphic dark academia romantasy series begins in 2027.</p>
+    </div>
+    <div class="next-series-grid">
+      <article class="next-series-card">
+        <div class="next-series-cover">
+          <img src="A_Compact_of_Salt_and_Iron_home.jpg" alt="A Compact of Salt and Iron cover" loading="lazy" decoding="async">
+          <span class="next-series-badge">Reader Magnet</span>
+        </div>
+        <div class="next-series-copy">
+          <p class="next-series-kicker">Novella</p>
+          <h3 class="next-series-title">A Compact of Salt and Iron</h3>
+          <p>Larke has been owned by a binding-stone for nineteen years. Cassia Fenwick has spent three years arguing her existence from a podium. Politics puts them in the same cold halls, and the compact finally meets something it cannot command.</p>
+          <a class="btn-sm" href="https://BookHip.com/NKTRVRZ" target="_blank" rel="noopener">Get the Reader Magnet</a>
+        </div>
+      </article>
+      <article class="next-series-card">
+        <div class="next-series-cover">
+          <img src="A_Vow_of_Iron_and_Blood_home.jpg" alt="A Vow of Iron and Blood cover" loading="lazy" decoding="async">
+          <span class="next-series-badge">Book One</span>
+        </div>
+        <div class="next-series-copy">
+          <p class="next-series-kicker">The Blood and Bracer Chronicles</p>
+          <h3 class="next-series-title">A Vow of Iron and Blood</h3>
+          <p>When her brother's magic marks him for Ravensmoor's mandatory draft, one reckless choice signs her life to House Thornecroft - and to Isolde, who holds the contract like a blade.</p>
+          <span class="next-series-status">Coming 2027</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
 <!-- QUOTE PULL -->
 <div class="quote-section">
   <div class="quote-inner">

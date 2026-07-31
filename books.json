@@ -1,6 +1,45 @@
 {
     "books":  [
                   {
+                      "id":  "a-compact-of-salt-and-iron",
+                      "title":  "A Compact of Salt and Iron",
+                      "series_id":  "blood-and-bracer",
+                      "series_position":  0,
+                      "position_label":  "Reader Magnet",
+                      "status":  "reader-magnet",
+                      "status_label":  "Reader Magnet",
+                      "cover_image":  "A_Compact_of_Salt_and_Iron_web.jpg",
+                      "homepage_cover_image":  "A_Compact_of_Salt_and_Iron_home.jpg",
+                      "blurb":  "They carved a compact into my throat and called it mine to keep. They never told me what it couldn\u0027t take.\n\nI am Larke, of House Duskharrow - no surname, no freedom, nothing that belongs to me but the scar. A binding-stone sealed to my skin before I could speak has owned my obedience for nineteen years, kept alive by a house willing to go further than any rival still dares. When Duskharrow loans me to its enemies as a political weapon, I expect to be used. I don\u0027t expect to be seen.\n\nCassia Fenwick has spent three years arguing my existence from a podium. She has never once asked what it costs me to be the argument - until politics traps us in the same cold halls, and she starts asking the questions no one else bothered with. The stone can command my silence, my service, my obedience.\n\nIt has never once been able to touch what I want.\n\nSome things are sealed with blood and salt. Some can still be broken.\n\nEnemies-to-Lovers | Forbidden \u0026 Bound | Elle Mae meets Lianyu Tan",
+                      "short_blurb":  "Larke has been owned by a binding-stone for nineteen years. Cassia Fenwick has spent three years arguing her existence from a podium. Politics puts them in the same cold halls, and the compact finally meets something it cannot command.",
+                      "links":  [
+                                    {
+                                        "label":  "Get the Reader Magnet",
+                                        "url":  "https://BookHip.com/NKTRVRZ",
+                                        "primary":  true
+                                    }
+                                ],
+                      "homepage_group":  "next-series"
+                  },
+                  {
+                      "id":  "a-vow-of-iron-and-blood",
+                      "title":  "A Vow of Iron and Blood",
+                      "series_id":  "blood-and-bracer",
+                      "series_position":  1,
+                      "position_label":  "Book One",
+                      "status":  "coming-soon",
+                      "status_label":  "Coming 2027",
+                      "cover_image":  "A_Vow_of_Iron_and_Blood_web.jpg",
+                      "homepage_cover_image":  "A_Vow_of_Iron_and_Blood_home.jpg",
+                      "blurb":  "I\u0027ve spent my life making sure no one looks at me twice. One reckless night undoes it.\n\nWhen my brother\u0027s magic marks him for Ravensmoor\u0027s mandatory draft, I have one way to stay close enough to protect him: sign my life to House Thornecroft, the Old Blood house that now owns me. Ravensmoor calls itself a school. It\u0027s a cage with better architecture - cold stone, sealed towers, and a headmaster who\u0027s spent a century erasing what he doesn\u0027t need.\n\nIsolde Thornecroft holds my contract and wields it like a blade. I hate her. I can\u0027t stop noticing how her cruelty looks less like control lately, and more like devotion.\n\nSomeone at Ravensmoor has hunted girls like me for decades, and I\u0027m out of ways to hide what I am. The truth in that sealed tower will cost me everything I\u0027ve bled to protect.\n\nI used to think surviving meant staying small. Not anymore.\n\nEnemies to lovers. A forbidden power imbalance. A secret that bites back.\n\nA Vow of Iron and Blood - for readers of Lianyu Tan and Elle Mae.",
+                      "short_blurb":  "When her brother\u0027s magic marks him for Ravensmoor\u0027s mandatory draft, one reckless choice signs her life to House Thornecroft - and to Isolde, who holds the contract like a blade.",
+                      "links":  [
+
+                                ],
+                      "homepage_group":  "next-series",
+                      "release_label":  "Coming 2027"
+                  },
+                  {
                       "id":  "the-binding-night",
                       "title":  "The Binding Night",
                       "series_id":  "monstrous-beloved",

@@ -166,6 +166,10 @@
                                         "label":  "Pre-order on Amazon",
                                         "url":  "https://www.amazon.com/dp/B0HC9W1MDW",
                                         "primary":  true
+                                    },
+                                    {
+                                        "label":  "Content Notes",
+                                        "url":  "content-notes.html#what-the-night-keeps"
                                     }
                                 ],
                       "homepage_group":  "next",

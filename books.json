@@ -113,13 +113,13 @@
                       "title":  "The Vast and Particular",
                       "series_id":  "monstrous-beloved",
                       "series_position":  4,
-                      "status":  "preorder",
-                      "status_label":  "Pre-order",
+                      "status":  "out-now",
+                      "status_label":  "Available Now",
                       "cover_image":  "the_vast_and_particular_ku_cover_v2.jpg",
                       "blurb":  "Verity has managed every risk with careful precision. She did not account for the ancient entity in her basement that finds her fury delightful.",
                       "links":  [
                                     {
-                                        "label":  "Pre-order on Amazon",
+                                        "label":  "Read on Amazon",
                                         "url":  "https://www.amazon.com/dp/B0H9BKYWZQ",
                                         "primary":  true
                                     },
@@ -128,7 +128,7 @@
                                         "url":  "content-notes.html#vast-and-particular"
                                     }
                                 ],
-                      "homepage_group":  "next",
+                      "homepage_group":  "available",
                       "homepage_cover_image":  "the_vast_and_particular_home.jpg"
                   },
                   {

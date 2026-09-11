@@ -136,18 +136,22 @@
                       "title":  "The Turning Season",
                       "series_id":  "monstrous-beloved",
                       "series_position":  5,
-                      "status":  "preorder",
-                      "status_label":  "Pre-order",
+                      "status":  "out-now",
+                      "status_label":  "Available Now",
                       "cover_image":  "The_Turning_Season_KU_v2.jpg",
                       "blurb":  "Elowen came back to Skovdal carrying shame she mistook for fact. Tarn has been holding space long enough.",
                       "links":  [
                                     {
-                                        "label":  "Pre-order on Amazon",
+                                        "label":  "Read on Amazon",
                                         "url":  "https://www.amazon.com/dp/B0HC9Y9MP3",
                                         "primary":  true
+                                    },
+                                    {
+                                        "label":  "Content Notes",
+                                        "url":  "content-notes.html#turning-season"
                                     }
                                 ],
-                      "homepage_group":  "next",
+                      "homepage_group":  "available",
                       "homepage_cover_image":  "The_Turning_Season_home.jpg",
                       "release_date":  "2026-09-09",
                       "release_label":  "Releases September 9, 2026"

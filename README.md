@@ -33,3 +33,7 @@ Edit `books.json` for book-level changes: release status, cover image, blurb, Am
 Edit `series.json` for series-level changes: series title, description, page URL, status, and planned book count.
 
 The homepage loads these JSON files to build the main book section. For release updates, start in `books.json`, then update any static pages that need matching copy such as `reading-order.html`, `content-notes.html`, or the series page.
+
+## October 7 release
+
+`release-state.js` switches What the Night Keeps to Available Now at midnight Eastern on October 7, 2026. It updates the homepage banner, hero link, bookshelf, links-page feature, reading order, content notes, series page, and new archive article. Deploy the October 6 changes before release day for the switch to run. The static HTML and books.json preserve preorder data as the pre-release fallback; the homepage derives the live book state from the release time.

@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "slug": "selvast-buried-records-and-what-the-night-keeps",
+      "title": "Selvast, Buried Records, and What the Night Keeps",
+      "dek": "The final book of The Monstrous Beloved brings a journalist and a vampire into a city where surviving history and official history are rarely the same thing.",
+      "date": "2026-10-06",
+      "displayDate": "October 6, 2026",
+      "category": "Field Notes",
+      "readTime": "5 minute read",
+      "description": "Explore Selvast, the Kadran, Halvet House, and the competing archives behind What the Night Keeps, the sapphic vampire romance closing The Monstrous Beloved.",
+      "keywords": [
+        "What the Night Keeps",
+        "Selvast",
+        "sapphic vampire romance",
+        "The Monstrous Beloved",
+        "Registry of Magical Practices"
+      ],
+      "relatedBook": "What the Night Keeps",
+      "excerpt": "A journalist needs a record she can publish. A vampire has spent centuries keeping one that survives by remaining difficult to read. Selvast holds them both."
+    },
+    {
       "slug": "morwick-basements-and-the-horror-of-scale",
       "title": "Morwick Basements and the Horror of Scale",
       "dek": "The Vast and Particular begins below the house, but the real terror is discovering that some things were never small enough to own.",

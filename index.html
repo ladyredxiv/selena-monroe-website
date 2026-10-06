@@ -1432,7 +1432,7 @@
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <div class="hero-cta">
-      <a href="https://www.amazon.com/dp/B0HC9Y9MP3" target="_blank" rel="noopener" class="btn btn-filled">Read The Turning Season</a>
+      <a href="https://www.amazon.com/dp/B0HC9Y9MP3" target="_blank" rel="noopener" class="btn btn-filled" data-release-href="https://www.amazon.com/dp/B0HC9W1MDW" data-release-text="Read What the Night Keeps">Read The Turning Season</a>
       <a href="#newsletter" class="btn">Join the Coven</a>
     </div>
   </div>
@@ -1518,27 +1518,9 @@
     <a class="archive-preview-link" href="archive.html">Explore the Archive</a>
   </div>
   <div class="archive-preview-grid">
-    <a class="archive-preview-card" href="archive/morwick-basements-and-the-horror-of-scale/">
-      <div>
-        <time datetime="2026-08-27">August 27, 2026<br>Book Lore</time>
-        <h3>Morwick Basements and the Horror of Scale</h3>
-      </div>
-      <p>The Vast and Particular asks what happens when a controlled life meets something too old, too vast, and too particular to be managed.</p>
-    </a>
-    <a class="archive-preview-card" href="archive/the-turning-season-is-drafted-notes-from-skovdal/">
-      <div>
-        <time datetime="2026-07-30">July 30, 2026<br>Drafting Notes</time>
-        <h3>The Turning Season Is Drafted: Notes from Skovdal</h3>
-      </div>
-      <p>The Turning Season is drafted, and Skovdal has become a place where homecoming, shapeshifting, shame, and the Registry&#39;s watch all press against the same wound.</p>
-    </a>
-    <a class="archive-preview-card" href="archive/dream-feeding-creative-obsession-and-nights-own/">
-      <div>
-        <time datetime="2026-07-15">July 15, 2026<br>Creature Notes</time>
-        <h3>Dream-Feeding, Creative Obsession, and Night&#39;s Own</h3>
-      </div>
-      <p>Night&#39;s Own turns inspiration into something with teeth: a strix who feeds on dreams and a novelist who begins writing toward the dark.</p>
-    </a>
+    <a class="archive-preview-card" href="archive/selvast-buried-records-and-what-the-night-keeps/"><div><time datetime="2026-10-06">October 6, 2026<br>Field Notes</time><h3>Selvast, Buried Records, and What the Night Keeps</h3></div><p>A journalist needs a record she can publish. A vampire has spent centuries keeping one that survives by remaining difficult to read. Selvast holds them both.</p></a>
+    <a class="archive-preview-card" href="archive/morwick-basements-and-the-horror-of-scale/"><div><time datetime="2026-08-27">August 27, 2026<br>Book Lore</time><h3>Morwick Basements and the Horror of Scale</h3></div><p>The Vast and Particular asks what happens when a controlled life meets something too old, too vast, and too particular to be managed.</p></a>
+    <a class="archive-preview-card" href="archive/the-turning-season-is-drafted-notes-from-skovdal/"><div><time datetime="2026-07-30">July 30, 2026<br>Drafting Notes</time><h3>The Turning Season Is Drafted: Notes from Skovdal</h3></div><p>The Turning Season is drafted, and Skovdal has become a place where homecoming, shapeshifting, shame, and the Registry&#39;s watch all press against the same wound.</p></a>
   </div>
 </section>
 
@@ -1625,12 +1607,12 @@
   </p>
 </footer>
 
+<script src="release-state.js?v=20261006"></script>
 <script>
-  // Countdown timer — set RELEASE_DATE to your next release date (YYYY-MM-DD)
-  var RELEASE_DATE = '2026-10-07';
+  // Countdown uses the same Eastern release time as the scheduled page updates.
   function updateCountdown() {
-    var target = new Date(RELEASE_DATE + 'T00:00:00').getTime();
-    var now = new Date().getTime();
+    var target = window.SelenaRelease.releaseAt;
+    var now = Date.now();
     var diff = target - now;
     if (diff <= 0) {
       document.getElementById('countdownSection').style.display = 'none';
@@ -1720,6 +1702,7 @@
   function renderBookshelf(books) {
     var shelf = document.getElementById('booksShelf');
     if (!shelf) return;
+    books = books.map(function(book) { return window.SelenaRelease.book(book); });
     var seriesId = shelf.getAttribute('data-series');
     var seriesBooks = books
       .filter(function(book) { return book.series_id === seriesId; })
@@ -1750,15 +1733,17 @@
     }).join('');
 
     shelf.innerHTML = '<div class="available-books">' + availableHtml + '</div>'
-      + '<div class="upcoming-panel"><div class="upcoming-heading"><h3>Next in the series</h3><a href="reading-order.html">Full Reading Order</a></div>'
-      + '<div class="upcoming-list">' + upcomingHtml + '</div></div>';
+      + (upcoming.length ? '<div class="upcoming-panel"><div class="upcoming-heading"><h3>Next in the series</h3><a href="reading-order.html">Full Reading Order</a></div>'
+      + '<div class="upcoming-list">' + upcomingHtml + '</div></div>' : '');
   }
 
   Promise.all([
     fetch('books.json').then(function(response) { return response.json(); }),
     fetch('series.json').then(function(response) { return response.json(); })
   ]).then(function(results) {
-    renderBookshelf(results[0].books || []);
+    var loadedBooks = results[0].books || [];
+    renderBookshelf(loadedBooks);
+    window.addEventListener('selena-release', function() { renderBookshelf(loadedBooks); });
   }).catch(function() {
     var shelf = document.getElementById('booksShelf');
     if (shelf) shelf.innerHTML = '<p class="book-error">The book list could not load. Visit the <a href="reading-order.html" style="color:var(--gold);">reading order</a> for the full series.</p>';

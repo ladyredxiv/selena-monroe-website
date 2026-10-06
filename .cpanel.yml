@@ -15,6 +15,7 @@ deployment:
     - /bin/cp "robots.txt" $DEPLOYPATH
     - /bin/cp "sitemap.xml" $DEPLOYPATH
     - /bin/cp "books.json" $DEPLOYPATH
+    - /bin/cp "release-state.js" $DEPLOYPATH
     - /bin/cp "series.json" $DEPLOYPATH
     - /bin/cp "omnibuses.json" $DEPLOYPATH
     - /bin/cp "posts.json" $DEPLOYPATH

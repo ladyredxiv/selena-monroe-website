@@ -54,3 +54,11 @@ deployment:
     - /bin/cp "A_Vow_of_Iron_and_Blood_web.jpg" $DEPLOYPATH
     - /bin/cp "Monstrous_Beloved_Volume_I_web.jpg" $DEPLOYPATH
     - /bin/cp "Monstrous_Beloved_Volume_II_web.jpg" $DEPLOYPATH
+
+    - /bin/mkdir -p /home/seleaddv/selena-publisher
+    - /bin/chmod 700 /home/seleaddv/selena-publisher
+    - /bin/cp -R publishing/. /home/seleaddv/selena-publisher/
+    - /bin/cp "index.html" /home/seleaddv/selena-publisher/templates/index.html
+    - /bin/cp "archive.html" /home/seleaddv/selena-publisher/templates/archive.html
+    - /bin/cp "sitemap.xml" /home/seleaddv/selena-publisher/templates/sitemap.xml
+    - /usr/bin/env python3 /home/seleaddv/selena-publisher/publish.py

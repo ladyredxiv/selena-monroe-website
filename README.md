@@ -39,3 +39,7 @@ The homepage loads these JSON files to build the main book section. For release 
 `release-state.js` switches What the Night Keeps to Available Now at midnight Eastern on October 7, 2026. It updates the homepage banner, hero link, bookshelf, links-page feature, reading order, content notes, series page, and new archive article. Deploy the October 6 changes before release day for the switch to run. The static HTML and books.json preserve preorder data as the pre-release fallback; the homepage derives the live book state from the release time.
 
 The omnibus editions are available for preorder. Their series-page badges and Amazon buttons switch independently at midnight Eastern on November 4 (Volume I) and December 3 (Volume II), 2026. Both dates use the standard-time offset (-05:00). Their dates and links are recorded in `omnibuses.json`; matching scheduled attributes live on the series-page cards.
+
+## Scheduled Archive Publishing
+
+See `publishing/SETUP.md` for the one-time cPanel Cron setup and editorial queue workflow. Future entries stay private and require explicit approval. Deployment automatically refreshes the private templates from current homepage/archive layouts. Deployments restore published scheduled entries from private persistent state.

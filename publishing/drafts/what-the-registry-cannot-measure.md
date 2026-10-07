@@ -1,8 +1,8 @@
 # What the Registry Cannot Measure
 
-Status: Draft for author review. Not queued or approved.
+Status: Text and publication time approved by the author. Added to the private publishing queue; server activation still requires deployment and Cron setup.
 
-Suggested window: late October, ahead of Volume I's November 4 release.
+Scheduled publication: October 28, 2026, 9:00 a.m. Eastern (UTC-04:00).
 
 Description: A spoiler-light look at magical classification, consent, grief, and desire in The Binding Night, The Tide Keeps, and Night's Own, collected in The Monstrous Beloved Volume I.
 

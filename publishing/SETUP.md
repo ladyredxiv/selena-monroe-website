@@ -26,7 +26,7 @@ Each queue entry needs the fields used by posts.json, plus:
 - `body_html`: reviewed article body; links to other site pages use `../../`.
 - `note_html`: optional companion note and book links.
 
-Drafts live under `publishing/drafts/` and never deploy as public pages. Approved entries go in `publishing/queue.json`; the queue itself remains private on the server. No articles are initially approved or queued.
+Drafts live under `publishing/drafts/` and never deploy as public pages. Approved entries go in `publishing/queue.json`; the queue itself remains private on the server. What the Registry Cannot Measure is approved and queued for October 28, 2026 at 9:00 a.m. Eastern. With hourly checks, it publishes on the first run at or after that time.
 
 ## Deployment And Recovery
 

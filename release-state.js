@@ -39,11 +39,28 @@
     }
     window.dispatchEvent(new Event('selena-release'));
   }
+  function applyOmnibusReleases() {
+    var pending = false;
+    document.querySelectorAll('[data-omnibus-release-at]').forEach(function (card) {
+      if (card.getAttribute('data-omnibus-live') === 'true') return;
+      if (Date.now() < Date.parse(card.getAttribute('data-omnibus-release-at'))) {
+        pending = true;
+        return;
+      }
+      card.querySelectorAll('[data-omnibus-text]').forEach(function (el) {
+        el.textContent = el.getAttribute('data-omnibus-text');
+      });
+      card.setAttribute('data-omnibus-live', 'true');
+    });
+    return pending;
+  }
   applyRelease();
-  if (!applied) {
+  var pendingOmnibuses = applyOmnibusReleases();
+  if (!applied || pendingOmnibuses) {
     var timer = setInterval(function () {
       applyRelease();
-      if (applied) clearInterval(timer);
+      pendingOmnibuses = applyOmnibusReleases();
+      if (applied && !pendingOmnibuses) clearInterval(timer);
     }, 1000);
   }
 }());

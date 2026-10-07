@@ -1,13 +1,15 @@
-# Archive Queue Proposals
+# Archive Queue and Drafts
 
-These are proposals, not approved publication commitments.
+All five articles have author-approved text and publication times and are queued with `approved: true`. Future articles remain private until their scheduled time. Server activation still requires deployment and Cron setup.
 
-| Window | Title | Purpose |
+| Publication at 9 a.m. Eastern | Title | Status |
 | --- | --- | --- |
-| Late October | What the Registry Cannot Measure | Spoiler-light companion to Volume I; first draft available here. |
-| Mid-November | The Places That Keep the Record | Settings and surviving evidence, leading toward Volume II. |
-| Early December | Where to Begin with The Monstrous Beloved | Evergreen reading guide including individual books and collected editions. |
-| Late December | A Compact Written into the Body | Binding-stones and House Duskharrow; review the manuscript before drafting. |
-| January before release | Ravensmoor Calls Itself a School | Institutional power in A Vow of Iron and Blood; exact release date still needed. |
+| October 28, 2026 | What the Registry Cannot Measure | Approved; server activation still requires deployment and Cron setup. |
+| November 18, 2026 | The Places That Keep the Record | Approved and queued; Volume II companion. |
+| December 9, 2026 | Where to Begin with The Monstrous Beloved | Approved and queued; evergreen reading guide. |
+| December 23, 2026 | A Compact Written into the Body | Approved and queued; standalone reader-magnet introduction. |
+| January 20, 2027 | Ravensmoor Calls Itself a School | Approved and queued; one week before the tentative January 27 Book One release. |
 
-Approve final text and an exact publication date before adding any article to the queue. No dates or drafts here automatically publish.
+The January 27 release is tentative, not a confirmed public announcement. No Book One purchase link or finalized content notes have been supplied. Review the January article's timing when the launch date is firm.
+
+Each Markdown file contains private review metadata, the public article body between separators, and private companion-link notes. Only the body and the curated companion links enter the generated article. Drafts and queue stay outside `public_html` on the server.
